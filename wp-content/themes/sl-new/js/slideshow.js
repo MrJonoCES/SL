@@ -3,22 +3,22 @@ var currentSlide = 0
 
 // here we find how many slides we have using the .length property
 // this is useful because we can use it as our max slide value
-var totalSlides = $('.holder div').length
+var totalSlides = jQuery('.holder div').length
 
 // this function moves to our slide. we pass in an argument to it (slide)
 // which is the number for the slide we want to go to
-var moveSlide = function (slide) {
-  // we are going to turn our currentSlide value into a negative vw unit
+function moveSlide(slide) {
+	// we are going to turn our currentSlide value into a negative vw unit
 	// and add the 'vw' unit onto the end 
-  var leftPosition = (-slide * 100) + 'vw'
+	var leftPosition = (-slide * 70) + 'vw'
 
 	// pass the vw unit into our css method below
 	// here we grab the holder and change it to the second slide
-  $('.holder').css('left', leftPosition)
-  
-  var slideNumber = slide + 1
+	jQuery('.holder').css('left', leftPosition)
+
+	var slideNumber = slide + 1
 	// here we set the text for the steps using currentSlide and total nubmer
-	$('.steps').text(slideNumber + ' / ' + totalSlides)
+	jQuery('.steps').text(slideNumber + ' / ' + totalSlides)
 }
 
 // 1. a function that deals with taking us to the next slide
@@ -66,7 +66,7 @@ var autoSlide = setInterval(function() {
 
 // we also have setTimeout, which is the same, but runs only once
 
-$('.next').on('click', function() {
+jQuery('.next').on('click', function() {
 	// this is going to cancel our autoSlide interval function
 	// as the user has taken over control of the slideshow 
   clearInterval(autoSlide)
@@ -74,7 +74,7 @@ $('.next').on('click', function() {
   nextSlide()
 })
 
-$('.prev').on('click', function() {
+jQuery('.prev').on('click', function() {
   clearInterval(autoSlide)
   previousSlide()
 })
@@ -83,4 +83,4 @@ $('.prev').on('click', function() {
 // our array starts at 0
 var slideNumber = currentSlide + 1
 // here we set the text for the steps using currentSlide and total nubmer
-$('.steps').text(slideNumber + ' / ' + totalSlides)
+jQuery('.steps').text(slideNumber + ' / ' + totalSlides)

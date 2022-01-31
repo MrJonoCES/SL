@@ -9,13 +9,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package SL-NEW
+ * @package nomadsun
  */
 
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
 
 		<?php
 		if ( have_posts() ) :
@@ -31,6 +32,9 @@ get_header();
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
+
+				// here we include our hero component file
+				get_template_part( 'template-parts/content-hero' );
 
 				/*
 				 * Include the Post-Type-specific template for the content.
@@ -50,8 +54,9 @@ get_header();
 		endif;
 		?>
 
-	</main><!-- #main -->
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();
