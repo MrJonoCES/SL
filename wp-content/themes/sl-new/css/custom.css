@@ -6,6 +6,12 @@ body {
     /* here we smooth the body text a touch to make it clearer */
     -webkit-font-smoothing: antialiased;
   }
+
+@font-face {
+  font-family: "Flexslider";
+  src: url("fonts/flexslider-icon.woff") format("woff"),
+  url("fonts/flexslider-icon.ttf") format("truetype");
+}
   
   /* wherever we use the cardo class, we get cardo */
   
