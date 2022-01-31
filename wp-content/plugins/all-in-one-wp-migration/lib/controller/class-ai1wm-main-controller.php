@@ -151,17 +151,19 @@ class Ai1wm_Main_Controller {
 	public function ai1wm_commands() {
 		// Add export commands
 		add_filter( 'ai1wm_export', 'Ai1wm_Export_Init::execute', 5 );
-		add_filter( 'ai1wm_export', 'Ai1wm_Export_Compatibility::execute', 5 );
-		add_filter( 'ai1wm_export', 'Ai1wm_Export_Archive::execute', 10 );
+		add_filter( 'ai1wm_export', 'Ai1wm_Export_Compatibility::execute', 10 );
+		add_filter( 'ai1wm_export', 'Ai1wm_Export_Archive::execute', 30 );
 		add_filter( 'ai1wm_export', 'Ai1wm_Export_Config::execute', 50 );
 		add_filter( 'ai1wm_export', 'Ai1wm_Export_Config_File::execute', 60 );
 		add_filter( 'ai1wm_export', 'Ai1wm_Export_Enumerate_Content::execute', 100 );
 		add_filter( 'ai1wm_export', 'Ai1wm_Export_Enumerate_Media::execute', 110 );
 		add_filter( 'ai1wm_export', 'Ai1wm_Export_Enumerate_Plugins::execute', 120 );
-		add_filter( 'ai1wm_export', 'Ai1wm_Export_Enumerate_Tables::execute', 130 );
+		add_filter( 'ai1wm_export', 'Ai1wm_Export_Enumerate_Themes::execute', 130 );
+		add_filter( 'ai1wm_export', 'Ai1wm_Export_Enumerate_Tables::execute', 140 );
 		add_filter( 'ai1wm_export', 'Ai1wm_Export_Content::execute', 150 );
 		add_filter( 'ai1wm_export', 'Ai1wm_Export_Media::execute', 160 );
 		add_filter( 'ai1wm_export', 'Ai1wm_Export_Plugins::execute', 170 );
+		add_filter( 'ai1wm_export', 'Ai1wm_Export_Themes::execute', 180 );
 		add_filter( 'ai1wm_export', 'Ai1wm_Export_Database::execute', 200 );
 		add_filter( 'ai1wm_export', 'Ai1wm_Export_Database_File::execute', 220 );
 		add_filter( 'ai1wm_export', 'Ai1wm_Export_Download::execute', 250 );
@@ -269,6 +271,7 @@ class Ai1wm_Main_Controller {
 		$this->create_backups_webconfig( AI1WM_BACKUPS_WEBCONFIG );
 		$this->create_backups_index_php( AI1WM_BACKUPS_INDEX_PHP );
 		$this->create_backups_index_html( AI1WM_BACKUPS_INDEX_HTML );
+		$this->create_backups_robots_txt( AI1WM_BACKUPS_ROBOTS_TXT );
 	}
 
 	/**
@@ -452,6 +455,22 @@ class Ai1wm_Main_Controller {
 	}
 
 	/**
+	 * Create backups robots.txt file
+	 *
+	 * @param  string Path to file
+	 * @return void
+	 */
+	public function create_backups_robots_txt( $path ) {
+		if ( ! Ai1wm_File_Robots::create( $path ) ) {
+			if ( is_multisite() ) {
+				return add_action( 'network_admin_notices', array( $this, 'backups_robots_txt_notice' ) );
+			} else {
+				return add_action( 'admin_notices', array( $this, 'backups_robots_txt_notice' ) );
+			}
+		}
+	}
+
+	/**
 	 * If the "noabort" environment variable has been set,
 	 * the script will continue to run even though the connection has been broken
 	 *
@@ -549,6 +568,15 @@ class Ai1wm_Main_Controller {
 	}
 
 	/**
+	 * Display notice for robots.txt file in backups directory
+	 *
+	 * @return void
+	 */
+	public function backups_robots_txt_notice() {
+		Ai1wm_Template::render( 'main/backups-robots-txt-notice' );
+	}
+
+	/**
 	 * Display notice for .htaccess file in WordPress directory
 	 *
 	 * @return void
@@ -621,7 +649,7 @@ class Ai1wm_Main_Controller {
 		add_submenu_page(
 			'ai1wm_export',
 			__( 'Backups', AI1WM_PLUGIN_NAME ),
-			__( 'Backups', AI1WM_PLUGIN_NAME ),
+			__( 'Backups', AI1WM_PLUGIN_NAME ) . Ai1wm_Template::get_content( 'main/backups', array( 'count' => Ai1wm_Backups::count_files() ) ),
 			'import',
 			'ai1wm_backups',
 			'Ai1wm_Backups_Controller::index'

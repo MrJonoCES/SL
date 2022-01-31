@@ -143,11 +143,15 @@ function sl_new_scripts() {
 	wp_enqueue_style( 'sl-new-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'sl-new-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'sl-new-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
 	wp_enqueue_style( 'sl-new-custom', get_template_directory_uri() . '/css/custom.css');
+	wp_enqueue_style( 'slideshow', get_template_directory_uri() . '/css/slideshow.css');
+
+	wp_enqueue_script( 'sl-new-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'slideshow', get_template_directory_uri() . '/js/slideshow.js', array(), '1.0.0', true );
 
 }
+
 add_action( 'wp_enqueue_scripts', 'sl_new_scripts' );
 
 /**
@@ -177,3 +181,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// here we have a function that returns
+// us a nicely formatted background image
+function nice_background($image_field) {
+	// we pass in our image field, and it returns us it 
+	// in a formatted fashion 
+	echo 'background-image: url(' . get_field($image_field) . ')';
+}

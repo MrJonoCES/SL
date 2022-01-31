@@ -93,6 +93,14 @@ require_once AI1WM_VENDOR_PATH .
 			DIRECTORY_SEPARATOR .
 			'servmask' .
 			DIRECTORY_SEPARATOR .
+			'filesystem' .
+			DIRECTORY_SEPARATOR .
+			'class-ai1wm-file-robots.php';
+
+require_once AI1WM_VENDOR_PATH .
+			DIRECTORY_SEPARATOR .
+			'servmask' .
+			DIRECTORY_SEPARATOR .
 			'cron' .
 			DIRECTORY_SEPARATOR .
 			'class-ai1wm-cron.php';
@@ -251,6 +259,10 @@ require_once AI1WM_EXPORT_PATH .
 
 require_once AI1WM_EXPORT_PATH .
 			DIRECTORY_SEPARATOR .
+			'class-ai1wm-export-enumerate-themes.php';
+
+require_once AI1WM_EXPORT_PATH .
+			DIRECTORY_SEPARATOR .
 			'class-ai1wm-export-content.php';
 
 require_once AI1WM_EXPORT_PATH .
@@ -260,6 +272,10 @@ require_once AI1WM_EXPORT_PATH .
 require_once AI1WM_EXPORT_PATH .
 			DIRECTORY_SEPARATOR .
 			'class-ai1wm-export-plugins.php';
+
+require_once AI1WM_EXPORT_PATH .
+			DIRECTORY_SEPARATOR .
+			'class-ai1wm-export-themes.php';
 
 require_once AI1WM_EXPORT_PATH .
 			DIRECTORY_SEPARATOR .

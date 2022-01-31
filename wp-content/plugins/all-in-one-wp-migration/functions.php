@@ -131,6 +131,16 @@ function ai1wm_plugins_list_path( $params ) {
 }
 
 /**
+ * Get themes.list absolute path
+ *
+ * @param  array  $params Request parameters
+ * @return string
+ */
+function ai1wm_themes_list_path( $params ) {
+	return ai1wm_storage_path( $params ) . DIRECTORY_SEPARATOR . AI1WM_THEMES_LIST_NAME;
+}
+
+/**
  * Get tables.list absolute path
  *
  * @param  array  $params Request parameters
@@ -138,6 +148,56 @@ function ai1wm_plugins_list_path( $params ) {
  */
 function ai1wm_tables_list_path( $params ) {
 	return ai1wm_storage_path( $params ) . DIRECTORY_SEPARATOR . AI1WM_TABLES_LIST_NAME;
+}
+
+/**
+ * Get incremental.content.list absolute path
+ *
+ * @param  array  $params Request parameters
+ * @return string
+ */
+function ai1wm_incremental_content_list_path( $params ) {
+	return ai1wm_storage_path( $params ) . DIRECTORY_SEPARATOR . AI1WM_INCREMENTAL_CONTENT_LIST_NAME;
+}
+
+/**
+ * Get incremental.media.list absolute path
+ *
+ * @param  array  $params Request parameters
+ * @return string
+ */
+function ai1wm_incremental_media_list_path( $params ) {
+	return ai1wm_storage_path( $params ) . DIRECTORY_SEPARATOR . AI1WM_INCREMENTAL_MEDIA_LIST_NAME;
+}
+
+/**
+ * Get incremental.plugins.list absolute path
+ *
+ * @param  array  $params Request parameters
+ * @return string
+ */
+function ai1wm_incremental_plugins_list_path( $params ) {
+	return ai1wm_storage_path( $params ) . DIRECTORY_SEPARATOR . AI1WM_INCREMENTAL_PLUGINS_LIST_NAME;
+}
+
+/**
+ * Get incremental.themes.list absolute path
+ *
+ * @param  array  $params Request parameters
+ * @return string
+ */
+function ai1wm_incremental_themes_list_path( $params ) {
+	return ai1wm_storage_path( $params ) . DIRECTORY_SEPARATOR . AI1WM_INCREMENTAL_THEMES_LIST_NAME;
+}
+
+/**
+ * Get incremental.backups.list absolute path
+ *
+ * @param  array  $params Request parameters
+ * @return string
+ */
+function ai1wm_incremental_backups_list_path( $params ) {
+	return ai1wm_storage_path( $params ) . DIRECTORY_SEPARATOR . AI1WM_INCREMENTAL_BACKUPS_LIST_NAME;
 }
 
 /**
@@ -237,6 +297,16 @@ function ai1wm_backup_url( $params ) {
  */
 function ai1wm_archive_bytes( $params ) {
 	return filesize( ai1wm_archive_path( $params ) );
+}
+
+/**
+ * Get archive modified time in seconds
+ *
+ * @param  array   $params Request parameters
+ * @return integer
+ */
+function ai1wm_archive_mtime( $params ) {
+	return filemtime( ai1wm_archive_path( $params ) );
 }
 
 /**
@@ -1333,6 +1403,8 @@ function ai1wm_write( $handle, $content ) {
 		if ( ( $meta = stream_get_meta_data( $handle ) ) ) {
 			throw new Ai1wm_Not_Writable_Exception( sprintf( __( 'Unable to write to: %s. <a href="https://help.servmask.com/knowledgebase/invalid-file-permissions/" target="_blank">Technical details</a>', AI1WM_PLUGIN_NAME ), $meta['uri'] ) );
 		}
+	} elseif ( null === $write_result ) {
+		return strlen( $content );
 	} elseif ( strlen( $content ) !== $write_result ) {
 		if ( ( $meta = stream_get_meta_data( $handle ) ) ) {
 			throw new Ai1wm_Quota_Exceeded_Exception( sprintf( __( 'Out of disk space. Unable to write to: %s. <a href="https://help.servmask.com/knowledgebase/out-of-disk-space/" target="_blank">Technical details</a>', AI1WM_PLUGIN_NAME ), $meta['uri'] ) );
@@ -1345,26 +1417,32 @@ function ai1wm_write( $handle, $content ) {
 /**
  * Read contents from a file
  *
- * @param  resource $handle   File handle to read from
- * @param  string   $filesize File size
- * @return integer
+ * @param  resource $handle File handle to read from
+ * @param  integer  $length Up to length number of bytes read
+ * @return string
  * @throws Ai1wm_Not_Readable_Exception
  */
-function ai1wm_read( $handle, $filesize ) {
-	$read_result = @fread( $handle, $filesize );
-	if ( false === $read_result ) {
-		if ( ( $meta = stream_get_meta_data( $handle ) ) ) {
-			throw new Ai1wm_Not_Readable_Exception( sprintf( __( 'Unable to read file: %s. <a href="https://help.servmask.com/knowledgebase/invalid-file-permissions/" target="_blank">Technical details</a>', AI1WM_PLUGIN_NAME ), $meta['uri'] ) );
+function ai1wm_read( $handle, $length ) {
+	if ( $length > 0 ) {
+		$read_result = @fread( $handle, $length );
+		if ( false === $read_result ) {
+			if ( ( $meta = stream_get_meta_data( $handle ) ) ) {
+				throw new Ai1wm_Not_Readable_Exception( sprintf( __( 'Unable to read file: %s. <a href="https://help.servmask.com/knowledgebase/invalid-file-permissions/" target="_blank">Technical details</a>', AI1WM_PLUGIN_NAME ), $meta['uri'] ) );
+			}
 		}
+
+		return $read_result;
 	}
 
-	return $read_result;
+	return false;
 }
 
 /**
  * Seeks on a file pointer
  *
- * @param  string  $handle File handle to seeks
+ * @param  resource $handle File handle
+ * @param  integer  $offset File offset
+ * @param  integer  $mode   Offset mode
  * @return integer
  */
 function ai1wm_seek( $handle, $offset, $mode = SEEK_SET ) {
@@ -1379,9 +1457,9 @@ function ai1wm_seek( $handle, $offset, $mode = SEEK_SET ) {
 }
 
 /**
- * Tells on a file pointer
+ * Returns the current position of the file read/write pointer
  *
- * @param  string  $handle File handle to tells
+ * @param  resource $handle File handle
  * @return integer
  */
 function ai1wm_tell( $handle ) {
@@ -1393,6 +1471,25 @@ function ai1wm_tell( $handle ) {
 	}
 
 	return $tell_result;
+}
+
+/**
+ * Write fields to a file
+ *
+ * @param  resource $handle File handle to write to
+ * @param  array    $fields Fields to write to the file
+ * @return integer
+ * @throws Ai1wm_Not_Writable_Exception
+ */
+function ai1wm_putcsv( $handle, $fields ) {
+	$write_result = @fputcsv( $handle, $fields );
+	if ( false === $write_result ) {
+		if ( ( $meta = stream_get_meta_data( $handle ) ) ) {
+			throw new Ai1wm_Not_Writable_Exception( sprintf( __( 'Unable to write to: %s. <a href="https://help.servmask.com/knowledgebase/invalid-file-permissions/" target="_blank">Technical details</a>', AI1WM_PLUGIN_NAME ), $meta['uri'] ) );
+		}
+	}
+
+	return $write_result;
 }
 
 /**
@@ -1610,6 +1707,24 @@ function ai1wm_get_filters( $tag ) {
 	}
 
 	return $filters;
+}
+
+/**
+ * Get WordPress plugins directories
+ *
+ * @return array
+ */
+function ai1wm_get_themes_dirs() {
+	$theme_dirs = array();
+	foreach ( search_theme_directories() as $theme_name => $theme_info ) {
+		if ( isset( $theme_info['theme_root'] ) ) {
+			if ( ! in_array( $theme_info['theme_root'], $theme_dirs ) ) {
+				$theme_dirs[] = untrailingslashit( $theme_info['theme_root'] );
+			}
+		}
+	}
+
+	return $theme_dirs;
 }
 
 /**
