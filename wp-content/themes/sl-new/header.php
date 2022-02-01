@@ -19,6 +19,8 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Cardo:400,400i|Tenor+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+	<link rel="stylesheet" href="http://localhost:8888/wp-content/themes/sl-new/css/slideshow.css">
+	<link rel="stylesheet" href="http://localhost:8888/wp-content/themes/sl-new/css/custom.css">
 	<?php wp_head(); ?>
 </head>
 

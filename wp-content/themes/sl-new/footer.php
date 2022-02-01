@@ -16,6 +16,8 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<script src="http://localhost:8888/wp-content/themes/sl-new/js/jquery.min.js"></script>
+
 <?php wp_footer(); ?>
 
 </body>

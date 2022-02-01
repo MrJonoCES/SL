@@ -1,29 +1,27 @@
 <section class="slideshow-holder">
 
-<?php if( have_rows('slides') ): ?>
-  <div class="flexslider">
-    <ul class="slides">
-    <?php while(have_rows('slides') ): the_row();
+  <?php if( have_rows('slides') ): ?>
 
-    // vars
-    $image = get_sub_field('images');
-    $imageurl = $image['sizes']['slider'];
-    $title = get_sub_field('title');
-    ?>
+    <div class="slideshow">
 
-    <li><img src="<?php echo $imageurl;?>" alt="<?php echo $title;?>"/></li>
+      <div class="holder">
 
-    <?php endwhile; ?>
-    </ul>
-  </div>
-<?php endif; ?>
+        <?php while(have_rows('slides') ): the_row();?>
 
-      <div class="custom-navigation">
-        <a href="#" class="flex-prev">Prev</a>
-        <div class="custom-controls-container"></div>
-        <a href="#" class="flex-next">Next</a>
+          <div style="<?php if (get_sub_field('image') ): ?> background-image: url(<?php the_sub_field('image'); ?>);<?php endif; ?>"></div>
+
+        <?php endwhile; ?>
+
       </div>
 
+    </div>
+
+  <?php endif; ?>
+
+  <div class="slider-controls">
+  <a href="#" class="prev" id="sliderbutton">Prev</a>
+  <a class="steps"></a>
+  <a href="#" class="next" id="sliderbutton2">Next</a>
+  </div>
+
 </section>
-
-
