@@ -1,28 +1,28 @@
-<!-- this tag wraps around our gallery and contains everything -->
-<div class="gallery container flex flex-wrap center ph4-l">
+<div class="gallery container flex flex-wrap center">
   <?php $images = get_sub_field('gallery'); ?>
-  <?php foreach($images as $image) : ?>
-    <!-- here we get an image by its id and also
-    tell it that we want the full size -->
-    <!-- here we have added a custom field to our attachments (images)
-    which adds a class name to control the width of the image -->
-    <div class="gallery-image ph3 mb4 <?php the_field('image_width', $image['id']); ?>">
-      <!-- here we get each image by its ID -->
-      <?php echo wp_get_attachment_image($image['id'], 'full'); ?>
-      <!-- here we use the regular weight of archivo and 
-      make it 50% opacity -->
+  <?php foreach($images as $image) : ?> 
 
-      <!-- here we assign our caption to a variable called $caption -->
-      <?php $caption = wp_get_attachment_caption($image['id']); ?>
-      
-      <!-- if the caption is not empty, we render it onto the page -->
-      <?php if(!empty($caption)) : ?> 
-        <p class="caption archivo-regular f5 o-50 pt3 mv0">
-          <!-- here we grab the caption by the attachment id -->
-          <?php echo $caption; ?>
-        </p>
-      <?php endif; ?>
+    <div class="gallery-image mb4 ph3 <?php the_field('image_width', $image['id']); ?> <?php the_field('image_order', $image['id']); ?>">
+
+    <?php echo wp_get_attachment_image($image['id'], 'full'); ?>
 
     </div>
   <?php endforeach; ?>
+  
+  <div class="self-center text-block f4 w-50-ns ph3">
+		<p class="v-mid"><?php the_sub_field('gallery_text_block'); ?></p>
+	</div>
 </div>
+
+
+<!-- <?php if( have_rows('gallery') ): ?>
+
+<div class="self-center text-block f4 w-50-ns ph3">
+
+  <?php while(have_rows('gallery') ): the_row();?>
+
+    <p class="v-mid"><?php the_sub_field('gallery_text_block'); ?></p>
+
+  <?php endwhile; ?>
+</div>
+<?php endif; ?> -->

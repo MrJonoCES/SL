@@ -1,53 +1,44 @@
-body {
-    /* here we use our main typeface and set it on our body tag */
-    font-family: 'Cardo', georgia, serif;
-    font-size: 18px;
-    line-height: 1.5;
-    /* here we smooth the body text a touch to make it clearer */
-    -webkit-font-smoothing: antialiased;
-  }
+.hero {
+  min-height: 80vh;
+}
 
-@font-face {
-  font-family: "Flexslider";
-  src: url("fonts/flexslider-icon.woff") format("woff"),
-  url("fonts/flexslider-icon.ttf") format("truetype");
+.hero img {
+  width: 900px;
+  height: auto;
 }
   
-  /* wherever we use the cardo class, we get cardo */
+.hero-heading {
+  letter-spacing: 0.05em;
+}
   
-  .cardo {
-    font-family: 'Cardo', georgia, serif;
-  }
+.hero-content {
+  max-width: 750px;
+}
   
-  /* using the same idea as tachyons using classes that apply
-  specific styles to our elements */
-  
-  .archivo,
-  .text-block h3 {
-    font-family: 'Archivo Black', sans-serif;
-  }
-  
-  .tenor {
-    font-family: 'Tenor Sans', sans-serif;
-  }
-  
-  .hero-heading,
-  .hero-subhead {
-    font-size: 64px;
-  }
-  
-  .hero-heading {
-    letter-spacing: 0.05em;
-  }
-  
-  .hero-content {
-    max-width: 750px;
-  }
-  
-  .text-block h3 {
-    font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  } 
+.text-block h3 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+} 
+
+.gallery-image img {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+.gallery {
+
+}
+
+.container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.two-col {
+  justify-content: space-between;
+}
