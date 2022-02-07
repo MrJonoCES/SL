@@ -1,9 +1,10 @@
 .hero {
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 .hero img {
-  width: 900px;
+  width: 60vw;
+  max-width: 1300px;
   height: auto;
 }
   
@@ -46,4 +47,8 @@
 
 .two-col {
   justify-content: space-between;
+}
+
+.slider-controls {
+  mix-blend-mode: exclusion;
 }

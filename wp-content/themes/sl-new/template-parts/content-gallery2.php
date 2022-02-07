@@ -10,7 +10,7 @@
   <?php endforeach; ?>
   
   <div class="text-block f4 ph3" style="align-self:end;">
-		<p><?php the_sub_field('gallery_text_block'); ?></p>
+		<p class="measure"><?php the_sub_field('gallery_text_block'); ?></p>
 	</div>
 </div>
 

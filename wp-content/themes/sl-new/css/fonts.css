@@ -53,8 +53,7 @@
   }
 
   .proj-title {
-    font-size: 124px;
-    color: #EC6964;
+    font-size: 74px;
     text-align: left;
   }
   
@@ -77,4 +76,9 @@
   .hero-heading,
   .hero-subhead {
     font-size: 64px;
+  }
+
+  .slider-controls a {
+    font-family: "Patrona", sans-serif;
+    font-size: 28px;
   }

@@ -10,19 +10,8 @@
   <?php endforeach; ?>
   
   <div class="self-center text-block f4 w-50-ns ph3">
-		<p class="v-mid"><?php the_sub_field('gallery_text_block'); ?></p>
+		<p class="measure"><?php the_sub_field('gallery_text_block'); ?></p>
 	</div>
 </div>
 
 
-<!-- <?php if( have_rows('gallery') ): ?>
-
-<div class="self-center text-block f4 w-50-ns ph3">
-
-  <?php while(have_rows('gallery') ): the_row();?>
-
-    <p class="v-mid"><?php the_sub_field('gallery_text_block'); ?></p>
-
-  <?php endwhile; ?>
-</div>
-<?php endif; ?> -->

@@ -7,14 +7,14 @@
 	
 	<!-- header content -->
 
-	<h1 class="w-100 f1 patrona proj-title mt0 mb3 lh-solid">
+	<h1 class="w-100 w-50-ns f1 patrona proj-title mt0 mb3 lh-solid" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
 		<?php the_title(); ?>
 	</h1>
-	<p class="f2 mint-bold w-100 mt0 mb4">
+	<p class="f2 mint-bold w-100 mt0 mb4" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
 		<?php the_field('location'); ?>
 	</p>
 	<div class="flex container two-col" style="justify-content:space-between;">
-		<p class="mint-bold-italic w-50-ns mt0 mb4 pr6">
+		<p class="mint-bold-italic w-50-ns mt0 mb4 pr6" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
 			<?php the_field('subhead'); ?>
 		</p>
 		<p class="w-50-ns mt0 mb4 pr3">
