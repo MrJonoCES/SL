@@ -27,6 +27,10 @@
 			<?php elseif( get_row_layout() == 'slider' ): ?>
 
 			<?php get_template_part( 'template-parts/content-slider' ); ?>
+
+			<?php elseif( get_row_layout() == 'gallery' ): ?>
+
+			<?php get_template_part( 'template-parts/content-gallery' ); ?>
 				
 			<?php endif; 
 		endwhile; endif; ?>

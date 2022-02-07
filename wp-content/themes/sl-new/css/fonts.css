@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Mint Bold";
+    src: url("fonts/Mint-Book-Bold-V02.woff2") format("woff2"),
+    url("fonts/Mint-Book-Bold-V02.woff") format("woff");
+  }
+
+@font-face {
+    font-family: "Mint Bold Italic";
+    src: url("fonts/Mint-Book-Bold-Italic-V02.woff2") format("woff2"),
+    url("fonts/Mint-Book-Bold-Italic-V02.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Mint Thin";
+    src: url("fonts/Mint-Book-Thin-V02.woff2") format("woff2"),
+    url("fonts/Mint-Book-Thin-V02.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Mint Thin Italic";
+    src: url("fonts/Mint-Book-Thin-Italic-V02.woff2") format("woff2"),
+    url("fonts/Mint-Book-Thin-Italic-V02.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Patrona";
+    src: url("fonts/PatronaPlainPremium-RegularB.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Flexslider";
+    src: url("fonts/flexslider-icon.woff") format("woff"),
+    url("fonts/flexslider-icon.ttf") format("truetype");
+  }
+    
+
+  body {
+    /* here we use our main typeface and set it on our body tag */
+    font-family: 'Newsreader', serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    /* here we smooth the body text a touch to make it clearer */
+    -webkit-font-smoothing: antialiased;
+  }
+
+
+  /* wherever we use the cardo class, we get cardo */
+  
+  .patrona {
+    font-family: 'Patrona', sans-serif;
+    font-feature-settings: 'ss07' 1;
+  }
+
+  .proj-title {
+    font-size: 124px;
+    color: #EC6964;
+    text-align: left;
+  }
+  
+  /* using the same idea as tachyons using classes that apply
+  specific styles to our elements */
+  
+  .mint-bold,
+  .text-block h3 {
+    font-family: 'Mint Bold', sans-serif;
+  }
+
+  .mint-bold-italic {
+    font-family: 'Mint Bold Italic', sans-serif;
+  }
+  
+  .tenor {
+    font-family: 'Tenor Sans', sans-serif;
+  }
+  
+  .hero-heading,
+  .hero-subhead {
+    font-size: 64px;
+  }

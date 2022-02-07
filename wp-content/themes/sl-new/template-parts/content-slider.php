@@ -1,4 +1,4 @@
-<section class="slideshow-holder">
+<section class="slideshow-holder mb4" style="<?php if (get_sub_field('slider_bg') ): ?> background-color: <?php the_sub_field('slider_bg'); ?>;<?php endif; ?>">
 
   <?php if( have_rows('slides') ): ?>
 
