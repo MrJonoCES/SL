@@ -68,7 +68,7 @@
 }
 
 .slider-controls {
-  /* mix-blend-mode: exclusion; */
+  mix-blend-mode: exclusion;
 }
 
 @media (max-width: 425px) {

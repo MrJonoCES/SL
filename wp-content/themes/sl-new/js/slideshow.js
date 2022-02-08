@@ -1,12 +1,4 @@
-$(".slideshow").each(function () {
-
-  document.getElementById("sliderbutton").addEventListener("click", function(event){
-    event.preventDefault()
-  });
-
-  document.getElementById("sliderbutton2").addEventListener("click", function(event){
-    event.preventDefault()
-  });
+$(".slideshow-holder").each(function () {
 
   var slide  = 0;
   var max    = $(this).find("div.slide").length;
