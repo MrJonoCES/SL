@@ -8,10 +8,15 @@
 
     </div>
   <?php endforeach; ?>
-  
-  <div class="text-block f4 ph3" style="align-self:end;">
-		<p class="measure"><?php the_sub_field('gallery_text_block'); ?></p>
-	</div>
+
+<div class="text-block mb4 f4 ph3" style="align-self:end;">
+  <?php $gallerytext = the_sub_field('gallery_text_block'); ?>
+
+    <?php if(!empty($gallerytext)) : ?>
+    <p class="measure">
+    <?php echo $gallerytext; ?>
+    </p>
+    <?php endif; ?>
+    
+  </div>
 </div>
-
-

@@ -10,8 +10,13 @@
   <?php endforeach; ?>
   
   <div class="self-center text-block f4 w-50-ns ph3">
-		<p class="measure"><?php the_sub_field('gallery_text_block'); ?></p>
-	</div>
+  <?php $gallerytext = the_sub_field('gallery_text_block'); ?>
+
+    <?php if(!empty($gallerytext)) : ?>
+    <p class="measure">
+    <?php echo $gallerytext; ?>
+    </p>
+    <?php endif; ?>
+    
+  </div>
 </div>
-
-

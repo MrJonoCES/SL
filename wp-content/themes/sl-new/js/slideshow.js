@@ -1,6 +1,6 @@
-$('.slideshow-holder').each(function () {
+$(".slideshow").each(function () {
 
-document.getElementById("sliderbutton").addEventListener("click", function(event){
+  document.getElementById("sliderbutton").addEventListener("click", function(event){
     event.preventDefault()
   });
 
@@ -8,55 +8,48 @@ document.getElementById("sliderbutton").addEventListener("click", function(event
     event.preventDefault()
   });
 
-
-var currentSlide = 0
-
-var totalSlides = $('.holder div').length
-
-var moveSlide = function (slide) {
-
-    var leftPosition = (-slide * 720) + 'px'
-
-    $('.holder').css('left', leftPosition)
+  var slide  = 0;
+  var max    = $(this).find("div.slide").length;
+  var holder = $(this).find(".holder");
+  var prev   = $(this).find("a.prev");
+  var next   = $(this).find("a.next");
+  var pagination = $(this).find(".slider-controls span");
   
-  var slideNumber = slide + 1
-	$('.steps').text(slideNumber + ' / ' + totalSlides)
-}
-
-
-var nextSlide = function () {
-  currentSlide = currentSlide + 1
+  var moveNext = function () {
+    if (slide < max - 1) {
+      slide = slide + 1;
+    } else {
+      slide = 0;
+    }
+    
+    holder.css("left", (slide * -720) + "px");
+    pagination.html((slide + 1) + "/" + max);
+  };
   
-  if (currentSlide >= totalSlides) {
-  	currentSlide = 0
+  var movePrev = function () {
+    if (slide > 0) {
+      slide = slide - 1;
+    } else {
+      slide = max - 1;
+    }
+    
+    holder.css("left", (slide * -720) + "px");
+    pagination.html((slide + 1) + "/" + max);
   }
-  moveSlide(currentSlide)
-}
-
-var previousSlide = function () {
-  currentSlide = currentSlide - 1
   
-  if (currentSlide < 0) {
-  	currentSlide = totalSlides - 1
-  } 
-  moveSlide(currentSlide)
-}
+  var autoMove = setInterval(function () {
+    moveNext();
+  }, 5000);
 
-var autoSlide = setInterval(function() {
-  nextSlide()
-}, 3000)
+  prev.on("click", function (ev) {
+    movePrev();
+    clearInterval(autoMove);    
+    ev.preventDefault();
+  })
 
-$('.next').on('click', function() {
-  clearInterval(autoSlide)
-  nextSlide()
-})
-
-$('.prev').on('click', function() {
-  clearInterval(autoSlide)
-  previousSlide()
-})
-
-var slideNumber = currentSlide + 1
-$('.steps').text(slideNumber + ' / ' + totalSlides)
-
+  next.on("click", function (ev) {
+    moveNext();
+    clearInterval(autoMove);
+    ev.preventDefault();
+  });  
 });
