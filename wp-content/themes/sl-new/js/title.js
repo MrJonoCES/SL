@@ -1,12 +1,16 @@
-const heroTag = document.querySelector(".hero")
+const screenTag = document.querySelectorAll(".hero-slide")
 
 const toggleHeader = function() {
   const pixels = window.pageYOffset
 
-  if (pixels > 50) {
-    heroTag.classList.add("scrolled")
+  if (pixels > 10) {
+    screenTag.forEach(function(el) {
+      el.classList.add("scrolled")
+    })
   } else {
-    heroTag.classList.remove("scrolled")
+    screenTag.forEach(function(el) {
+      el.classList.remove("scrolled")
+    })
   }
 }
 
