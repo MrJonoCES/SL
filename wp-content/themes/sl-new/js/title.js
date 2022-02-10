@@ -19,3 +19,14 @@ toggleHeader()
 document.addEventListener("scroll", function () {
     toggleHeader()
 })
+
+
+// h1 = document.getElementById("post_title")
+  
+// function updateText(e) {
+//   multiplierWidth = e.offsetX / window.innerWidth;
+//   randomWeight =  multiplierWidth * (900 - 100) + 100;
+//   h1.style.fontVariationSettings = "\"wght\" " + randomWeight;
+// }
+
+// window.addEventListener("mousemove", updateText)

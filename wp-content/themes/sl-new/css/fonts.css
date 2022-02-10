@@ -32,33 +32,40 @@
     src: url("fonts/flexslider-icon.woff") format("woff"),
     url("fonts/flexslider-icon.ttf") format("truetype");
   }
+  
+  @font-face {
+    font-family: "Shrill";
+    font-weight: 100 900;
+    src: url("fonts/Shrill_Variable.woff2") format("woff2"),
+    url("fonts/Shrill_Variable.woff") format("woff"),
+    url("fonts/Shrill_Variable.ttf") format("truetype");
+  }
+
+
     
 
   body {
-    /* here we use our main typeface and set it on our body tag */
     font-family: 'Newsreader', serif;
     font-weight: 300;
     font-size: 18px;
     line-height: 1.5;
-    /* here we smooth the body text a touch to make it clearer */
     -webkit-font-smoothing: antialiased;
   }
-
-
-  /* wherever we use the cardo class, we get cardo */
   
   .patrona {
     font-family: 'Patrona', sans-serif;
     font-feature-settings: 'ss07' 1;
   }
 
+  .shrill {
+    font-family: 'Shrill', sans-serif;
+    font-weight: 600;
+  }
+
   .proj-title {
     font-size: 40px;
     text-align: left;
   }
-  
-  /* using the same idea as tachyons using classes that apply
-  specific styles to our elements */
   
   .mint-bold,
   .text-block h3 {

@@ -1,5 +1,5 @@
 <!-- header bg image -->
-<div class="big-title patrona hero-slide pa5 mt5 lh-solid">
+<div class="big-title shrill hero-slide pa5 mt5 lh-solid" id="post_title">
 	<?php the_title(); ?>
 </div>
 <div class="hero-screen hero-slide" style="<?php if( get_field('page_colour') ): ?>background-color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
