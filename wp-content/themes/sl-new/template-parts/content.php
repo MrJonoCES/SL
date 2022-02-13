@@ -35,6 +35,10 @@
 			<?php elseif( get_row_layout() == 'gallery_2' ): ?>
 
 			<?php get_template_part( 'template-parts/content-gallery2' ); ?>
+
+			<?php elseif( get_row_layout() == 'process_images' ): ?>
+
+			<?php get_template_part( 'template-parts/content-process' ); ?>
 				
 			<?php endif; 
 		endwhile; endif; ?>
