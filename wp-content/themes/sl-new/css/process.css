@@ -1,5 +1,16 @@
 .process {
-    min-height: 961px;
+    min-height: 960px;
+    background-size: 80px 80px;
+    background-image:
+      linear-gradient(to right, #FB5954 1px, transparent 1px),
+      linear-gradient(to bottom, #FB5954 1px, transparent 1px);
+    background-color: #fff;
+    background-position: top; 
+    /* padding: 80px 0 0 0; */
+  }
+
+  .process-header {
+    min-height: 160px;
     background-size: 80px 80px;
     background-image:
       linear-gradient(to right, #FB5954 1px, transparent 1px),
@@ -13,21 +24,26 @@
     width: 1040px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
     /* display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px; */
   }
 
   .sizeA {
-      width: 400px;
-      height: 640px;
-      margin: 80px;
+    height: 560px;
+    margin: 80px;
+    flex-basis: 400px;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 
   .sizeB {
-    width: 470px;
     height: 720px;
     margin: 80px;
+    flex-basis: 480px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .project-grid {
@@ -49,7 +65,8 @@
   .process-title {
     width: 560px;
     height: 80px;
-    padding-top: 10px;
+    padding-top: 90px;
+    margin-bottom: 70px;
   }
 
   .process-heading {
@@ -61,6 +78,26 @@
     background-color: blue;
     color: #fff;
     padding: 20px;
-    width: 480px;
-    margin: 80px;
+    margin: 80px 0px;
+    flex-basis: 400px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 400px;
+    align-self: flex-end;
+  }
+
+  .two-square {
+    height: 160px;
+  }
+  .three-square {
+    height: 240px;
+  }
+  .four-square {
+    height: 320px;
+  }
+  .five-square {
+    height: 400px;
+  }
+  .six-square {
+    height: 480px;
   }
