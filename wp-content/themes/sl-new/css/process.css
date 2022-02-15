@@ -6,7 +6,7 @@
       linear-gradient(to bottom, #FB5954 1px, transparent 1px);
     background-color: #fff;
     background-position: top; 
-    /* padding: 80px 0 0 0; */
+    padding: 0 0 80px 0;
   }
 
   .process-header {
@@ -17,7 +17,7 @@
       linear-gradient(to bottom, #FB5954 1px, transparent 1px);
     background-color: #fff;
     background-position: top; 
-    padding: 80px 0 0 0;
+    /* padding: 80px 0 0 0; */
   }
 
   .process-container {
@@ -25,14 +25,15 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 80px; */
+  }
+
+  div.process-container:nth-child(odd){
+    flex-direction: row-reverse;
   }
 
   .sizeA {
-    height: 560px;
-    margin: 80px;
+    height: 640px;
+    margin: 80px 80px 0 80px;
     flex-basis: 400px;
     flex-grow: 0;
     flex-shrink: 0;
@@ -40,11 +41,35 @@
 
   .sizeB {
     height: 720px;
-    margin: 80px;
+    margin: 80px 80px 0 80px;
     flex-basis: 480px;
     flex-grow: 0;
     flex-shrink: 0;
 }
+
+  .sizeC {
+    height: 640px;
+    margin-top: 80px;
+    flex-basis: 1040px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .sizeD {
+    height: 480px;
+    margin: 80px 80px 0 80px;
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .sizeE {
+    height: 400px;
+    margin: 80px 80px 0 80px;
+    flex-basis: 560px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
 
 .project-grid {
     width: 1040px;
@@ -84,6 +109,10 @@
     flex-shrink: 0;
     height: 400px;
     align-self: flex-end;
+  }
+
+  div.process-text p {
+    margin: 0 !important;
   }
 
   .two-square {

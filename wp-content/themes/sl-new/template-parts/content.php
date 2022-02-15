@@ -35,17 +35,27 @@
 			<?php elseif( get_row_layout() == 'gallery_2' ): ?>
 
 			<?php get_template_part( 'template-parts/content-gallery2' ); ?>
-
-			<?php elseif( get_row_layout() == 'process_gallery' ): ?>
-
-			<?php get_template_part( 'template-parts/content-process' ); ?>
 				
 			<?php endif; 
 		endwhile; endif; ?>
 
 	</div><!-- .entry-content -->
 
+<?php if( have_rows('process_content') ): ?>
+	<section class="process">
+    <?php while( have_rows('process_content') ): the_row(); ?>
+	    <?php if( get_row_layout() == 'process_gallery' ): ?>
+            <?php get_template_part( 'template-parts/content-process' ); ?>
+        <?php endif; ?>
+	<?php endwhile; ?>
+	</section>
+<?php endif; ?>
+
 	<footer class="entry-footer">
-		<?php //nomadsun_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+		<?php //entry_footer(); ?>
+	</footer>
 </article><!-- #post-<?php the_ID(); ?> -->
+
+
+
+
