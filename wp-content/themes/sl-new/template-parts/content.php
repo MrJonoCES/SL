@@ -42,7 +42,7 @@
 	</div><!-- .entry-content -->
 
 <?php if( have_rows('process_content') ): ?>
-	<section class="process">
+	<section class="process" style="<?php if (get_field('page_colour') ): ?>background-image: linear-gradient(to right, <?php the_field('page_colour'); ?> 1px, transparent 1px), linear-gradient(to bottom, <?php the_field('page_colour'); ?> 1px, transparent 1px);<?php endif; ?>">
     <?php while( have_rows('process_content') ): the_row(); ?>
 	    <?php if( get_row_layout() == 'process_gallery' ): ?>
             <?php get_template_part( 'template-parts/content-process' ); ?>
@@ -55,7 +55,3 @@
 		<?php //entry_footer(); ?>
 	</footer>
 </article><!-- #post-<?php the_ID(); ?> -->
-
-
-
-

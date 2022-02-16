@@ -1,9 +1,9 @@
 .process {
     min-height: 960px;
     background-size: 80px 80px;
-    background-image:
+    /* background-image:
       linear-gradient(to right, #FB5954 1px, transparent 1px),
-      linear-gradient(to bottom, #FB5954 1px, transparent 1px);
+      linear-gradient(to bottom, #FB5954 1px, transparent 1px); */
     background-color: #fff;
     background-position: top; 
     padding: 0 0 80px 0;
@@ -22,8 +22,6 @@
 
   .process-container {
     width: 1040px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     padding: 0 40px 0 40px;
   }
@@ -38,6 +36,9 @@
     flex-basis: 400px;
     flex-grow: 0;
     flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .sizeB {
@@ -46,6 +47,9 @@
     flex-basis: 400px;
     flex-grow: 0;
     flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
   .sizeC {
@@ -55,6 +59,9 @@
     flex-grow: 0;
     flex-shrink: 0;
     transform: translateX(40px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .sizeD {
@@ -65,6 +72,9 @@
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .sizeE {
@@ -73,6 +83,9 @@
     flex-basis: 480px;
     flex-grow: 0;
     flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
 .project-grid {
@@ -100,11 +113,9 @@
 
   .process-heading {
     font-size: 80px;
-    color: blue;
   }
 
   .process-text {
-    background-color: blue;
     color: #fff;
     padding: 20px;
     margin: 80px 40px 80px 40px;

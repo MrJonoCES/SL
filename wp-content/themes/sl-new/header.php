@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="http://localhost:8888/wp-content/themes/sl-new/css/custom.css">
 	<link rel="stylesheet" href="http://localhost:8888/wp-content/themes/sl-new/css/fonts.css">
 	<link rel="stylesheet" href="http://localhost:8888/wp-content/themes/sl-new/css/process.css">
+	<link rel="stylesheet" href="http://localhost:8888/wp-content/themes/sl-new/css/contact.css">
 	<?php wp_head(); ?>
 </head>
 

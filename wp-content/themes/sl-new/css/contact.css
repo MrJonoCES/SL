@@ -1,0 +1,193 @@
+.spy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: auto;
+}
+
+.left-eye {
+  width: 40px;
+  height: 50px;
+  position: relative;
+  top: 212px;
+  left: 28px;  
+}
+
+.right-eye {
+  width: 50px;
+  height: 60px;
+  position: relative;
+  top: 155px;
+  left: 74px;
+}
+
+.left-mask {
+  -webkit-mask-image: url(http://localhost:8888/wp-content/uploads/2022/02/spy-left-eye-mask.svg);
+  mask-image: url(http://localhost:8888/wp-content/uploads/2022/02/spy-left-eye-mask.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat; 
+	width: 53px;
+	height: 51px;
+  position: relative;
+  top: 0px;
+  left: -1px;
+	overflow: hidden;
+}
+
+.right-mask {
+  -webkit-mask-image: url(http://localhost:8888/wp-content/uploads/2022/02/spy-right-eye-mask.svg);
+  mask-image: url(http://localhost:8888/wp-content/uploads/2022/02/spy-right-eye-mask.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat; 
+  position: relative;
+  top: -3px;
+  right: 2px;
+    width: 65px;
+    height: 63px; 
+    overflow: hidden;
+}
+
+div.iris {
+	position: absolute;
+	top: 24px;
+	left: 10px;
+}
+
+div.iris-right {
+	left: 12px;
+  top: 31px;
+}
+
+div.iris div {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 60px;
+	background-color: #000;
+	border-radius: 100%;
+  border: solid 10px white;
+  border-style: double;
+	transform: translate(-50%, -50%);
+}
+/* 
+section {
+  position: relative;
+  padding: 5vh 0 5vh 0;
+} */
+
+section.contact {
+  background-color: #80FFDB;
+  position: relative;
+  padding: 5vh 0 5vh 0;
+}
+
+.project {
+  min-height: 90vh;
+  /* height: 90vh; */
+  display: flex;
+  align-items: center;
+}
+
+.project-details {
+  width: 55vw;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.title {
+  align-self: end;
+}
+
+.email-form {
+  margin-bottom: 50px;
+}
+
+.sign-up {
+  display: flex;
+  border-bottom: solid 2px #1C33DB;
+  padding-bottom: 12px;
+  margin: 50px 0 10px 0;
+  width: 50%;
+}
+
+input {
+  background: none;
+  border: none;
+  font-size: 20px;
+  outline: none;
+}
+
+.email-input {
+	/* this will tell our input to stretch out and fill the available space */
+  flex: 1;
+}
+
+.form {
+  margin: 48px 24px;
+}
+
+.blue {
+  color: #1C33DB;
+}
+
+@media (max-width: 840px) {
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h2.patrona {
+    font-size: 32px;
+  }
+
+  .project {
+    min-height: 60vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .project-details {
+    width: 80vw;
+    transform: translateY(0%);
+  }
+
+  .title {
+    width: 100%;
+    margin-top: 15px;
+  }
+/* 
+  section {
+    height: auto;
+  } */
+
+  .contact {
+  min-height: 120vh;
+  overflow: hidden;
+  padding-top: 0px;
+  }
+
+  .spy {
+  bottom: -240px;
+  right: -100px;
+  }
+
+  .email-input {
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .sign-up {
+    width: 100%;
+    display: grid;
+    border-bottom: none;
+  }
+
+  .submit {
+    text-align: left;
+    padding: 10px 0 0 0;
+  }
+}
+

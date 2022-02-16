@@ -31,7 +31,6 @@
 
 .big-title {
   font-size: 168px;
-  color: blue;
   mix-blend-mode: multiply;
   position: absolute;
   top: 0;
@@ -96,8 +95,6 @@ div.gallery:nth-child(even){
 
 .container {
   max-width: 1150px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .two-col {
