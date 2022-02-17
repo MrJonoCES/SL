@@ -31,6 +31,10 @@
 			<?php elseif( get_row_layout() == 'gallery' ): ?>
 
 			<?php get_template_part( 'template-parts/content-gallery' ); ?>
+
+			<?php elseif( get_row_layout() == 'gallery_2' ): ?>
+
+			<?php get_template_part( 'template-parts/content-gallery2' ); ?>
 				
 			<?php endif; 
 		endwhile; endif; ?>

@@ -13,7 +13,7 @@
   <?php $gallerytext = get_sub_field('gallery_text_block'); ?>
 
     <?php if(!empty($gallerytext)) : ?>
-    <p class="measure pr5">
+    <p class="measure">
     <?php echo $gallerytext; ?>
     </p>
     <?php endif; ?>
