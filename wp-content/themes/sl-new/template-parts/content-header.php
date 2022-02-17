@@ -19,7 +19,7 @@
 		<?php the_field('location'); ?>
 	</p>
 	<div class="flex container two-col" style="justify-content:space-between;">
-		<p class="mint-bold-italic w-50-ns mt0 mb4 pr0 pr6-ns" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
+		<p class="mint w-50-ns mt0 mb4 pr0 pr6-ns" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
 			<?php the_field('subhead'); ?>
 		</p>
 		<p class="w-50-ns mt0 mb4 pr3">

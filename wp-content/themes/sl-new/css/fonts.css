@@ -11,15 +11,15 @@
   }
 
   @font-face {
-    font-family: "Mint Thin";
-    src: url("fonts/Mint-Book-Thin-V02.woff2") format("woff2"),
-    url("fonts/Mint-Book-Thin-V02.woff") format("woff");
+    font-family: "Mint";
+    src: url("fonts/Mint-Book-Regular-V03.woff2") format("woff2"),
+    url("fonts/Mint-Book-Regular-V03.woff") format("woff");
   }
 
   @font-face {
-    font-family: "Mint Thin Italic";
-    src: url("fonts/Mint-Book-Thin-Italic-V02.woff2") format("woff2"),
-    url("fonts/Mint-Book-Thin-Italic-V02.woff") format("woff");
+    font-family: "Mint Italic";
+    src: url("fonts/Mint-Book-Regular-Italic-V03.woff2") format("woff2"),
+    url("fonts/Mint-Book-Regular-Italic-V03.woff") format("woff");
   }
 
   @font-face {
@@ -66,6 +66,10 @@
     font-size: 40px;
     text-align: left;
   }
+
+  .mint {
+    font-family: 'Mint', sans-serif;
+  }
   
   .mint-bold,
   .text-block h3 {
@@ -76,16 +80,12 @@
     font-family: 'Mint Bold Italic', sans-serif;
   }
   
-  .tenor {
-    font-family: 'Tenor Sans', sans-serif;
-  }
-  
   .hero-heading,
   .hero-subhead {
     font-size: 64px;
   }
 
   .slider-controls a {
-    font-family: "Patrona", sans-serif;
+    font-family: "Mint", sans-serif;
     font-size: 28px;
   }
