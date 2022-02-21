@@ -8,21 +8,21 @@
 	
 </div>
 
-<div class="container center mb4 ph3 pv2 pv5-ns">
+<div class="container mx-auto mb3 ph3 pv2 pv3-ns">
 	
 	<!-- title content -->
 
 	<h1 class="w-100 w-40-ns mint-bold proj-title mt0 mb3 lh-solid" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
 		<?php the_title(); ?>
 	</h1>
-	<p class="mint-bold w-100 mt0 mb4" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
+	<p class="mint-bold w-100 mt0 mb3" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
 		<?php the_field('location'); ?>
 	</p>
 	<div class="flex container two-col" style="justify-content:space-between;">
-		<p class="mint w-50-ns mt0 mb4 pr0 pr6-ns" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
+		<p class="measure col col-12 md-col-3 mint mt0 mb3 pr0 pr6-ns" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
 			<?php the_field('subhead'); ?>
 		</p>
-		<p class="w-50-ns mt0 mb4 pr3">
+		<p class="mint col col-12 md-col-8 mt0 mb3 pr3">
 			<?php the_field('intro'); ?>
 		</p>
 	</div>

@@ -25,7 +25,7 @@ get_header();
 
 <section class="contact">
   <div class="project">
-    <div class="project-details">
+    <div class="contact-details ph3">
       <div class="email-form">
       <h2 class="shrill title blue f1">Contact</h2>
           <form action="" method="post" id="subForm" class="sign-up">

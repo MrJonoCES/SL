@@ -6,6 +6,8 @@ $(".slideshow-holder").each(function () {
   var prev   = $(this).find("a.prev");
   var next   = $(this).find("a.next");
   var pagination = $(this).find(".slider-controls span");
+  let sliderWidth = document.querySelector('.holder div');
+  let Width = sliderWidth.offsetWidth;
   
   var moveNext = function () {
     if (slide < max - 1) {
@@ -14,7 +16,7 @@ $(".slideshow-holder").each(function () {
       slide = 0;
     }
     
-    holder.css("left", (slide * -720) + "px");
+    holder.css("left", (slide * -Width) + "px");
     pagination.html((slide + 1) + "/" + max);
   };
   
@@ -25,7 +27,7 @@ $(".slideshow-holder").each(function () {
       slide = max - 1;
     }
     
-    holder.css("left", (slide * -720) + "px");
+    holder.css("left", (slide * -Width) + "px");
     pagination.html((slide + 1) + "/" + max);
   }
   

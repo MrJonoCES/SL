@@ -1,7 +1,7 @@
 <?php $process_title = get_sub_field('process_title'); ?>
 
 <?php if(!empty($process_title)) : ?>
-    <div class="process-title center shrill process-heading tc lh-solid">
+    <div class="process-title mx-auto shrill process-heading tc lh-solid">
 
         <h1 class="shrill process-heading tc w-100 mt0 mb3 lh-solid" style="<?php if (get_field('secondary_page_colour') ): ?> color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
             <?php echo $process_title; ?>
@@ -9,7 +9,7 @@
     </div>
 <?php endif; ?>
 
-<div class="process-container center">
+<div class="process-container mx-auto">
     <?php $images = get_sub_field('process_gallery'); ?>
     <?php foreach($images as $image) : ?>
 

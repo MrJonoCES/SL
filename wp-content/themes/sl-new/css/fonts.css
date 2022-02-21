@@ -50,6 +50,12 @@
     font-size: 18px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    text-align: left !important;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
   }
   
   .patrona {
@@ -69,6 +75,7 @@
 
   .mint {
     font-family: 'Mint', sans-serif;
+    font-weight: normal;
   }
   
   .mint-bold,
@@ -88,4 +95,66 @@
   .slider-controls a {
     font-family: "Mint", sans-serif;
     font-size: 28px;
+  }
+
+  .h1-mint {
+    font-family: 'Mint';
+    font-size: 40px;
+    line-height: 1.15;
+  }
+
+  header a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    margin-left: 16px;
+  }
+
+  header a:nth-child(1) {
+    margin-left: 0px;
+  }
+  
+  h1 {
+    font-family: 'Shrill', sans-serif;
+    font-size: 100px;
+    font-feature-settings: 'ss04' 1;
+  }
+  
+  .h1-mint {
+    font-family: 'Mint';
+    font-size: 40px;
+    line-height: 1.15;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  h2.patrona {
+    font-size: 40px;
+  }
+  
+  h2.italic {
+    font-family: 'Mint Italic', sans-serif;
+    font-weight: normal;
+  }
+  
+  .patrona {
+    font-family: 'Patrona', sans-serif;
+  }
+  
+  p.mint {
+    font-size: 20px;
+  }
+
+  .project-title-home h2 {
+    align-self: end;
+    line-height: 1.1;
+    margin-bottom: -7px;
+  }
+
+  .blurb {
+    align-self: end;
+    line-height: 1;
+    margin-bottom: -2px;
   }

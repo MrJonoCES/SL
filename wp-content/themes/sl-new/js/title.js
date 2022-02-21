@@ -1,32 +1,21 @@
 const screenTag = document.querySelectorAll(".hero-slide")
 
-const toggleHeader = function() {
+const slideHeader = function() {
   const pixels = window.pageYOffset
 
   if (pixels > 10) {
     screenTag.forEach(function(el) {
-      el.classList.add("scrolled")
+      el.classList.add("title-scrolled")
     })
   } else {
     screenTag.forEach(function(el) {
-      el.classList.remove("scrolled")
+      el.classList.remove("title-scrolled")
     })
   }
 }
 
-toggleHeader() 
+slideHeader() 
 
 document.addEventListener("scroll", function () {
-    toggleHeader()
+  slideHeader()
 })
-
-
-// h1 = document.getElementById("post_title")
-  
-// function updateText(e) {
-//   multiplierWidth = e.offsetX / window.innerWidth;
-//   randomWeight =  multiplierWidth * (900 - 100) + 100;
-//   h1.style.fontVariationSettings = "\"wght\" " + randomWeight;
-// }
-
-// window.addEventListener("mousemove", updateText)

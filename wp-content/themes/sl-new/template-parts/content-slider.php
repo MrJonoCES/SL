@@ -2,7 +2,7 @@
 
   <?php if( have_rows('slides') ): ?>
 
-    <div class="slideshow">
+    <div class="slideshow" id="cont">
 
       <div class="holder">
 
