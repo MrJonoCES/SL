@@ -17,6 +17,13 @@ get_header();
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
+
+	<div class="main-title main-title-onn pt2">
+		<h1 class="tc mv0">
+		Smith & Lewarne
+		</h1>
+	</div>
+
 		<div class="homepage">
 
 			<section class="introduction">
@@ -29,48 +36,54 @@ get_header();
 
 			<section class="proj1" data-parallax="#FB5954">
 				<div class="project">
-					<div class="project-details">
-					<img src="http://localhost:8888/wp-content/uploads/2022/02/DSCF5284.jpg" class="photo-desktop">
-					<img src="fosse-portrait.jpg" class="photo-mobile">
-						<div class="project-title-home">
-							<h2 class="col col-12 md-col-6 mv0 mint-bold title f1">Fosse Park</h2>
-							<p class="col col-12 md-col-5 mv0 mint blurb">The UK’s first vertical play wall</p>
-						</div>
-					</div>
+				
+				<div class="project-details" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/02/DSCF5284.jpg');">
+					<!-- <div class="project-dim"> -->
+						<!-- <a href="http://localhost:8888/fosse-park/"><img src="http://localhost:8888/wp-content/uploads/2022/02/DSCF5284.jpg" class="photo-desktop"></a>
+						<img src="fosse-portrait.jpg" class="photo-mobile"> -->
+						
+						<a href="http://localhost:8888/fosse-park/">
+							<div class="project-title-home">
+								<h2 class="col col-12 md-col-6 mv0 mint-bold title f1">Fosse Park</h2>
+								<p class="col col-12 md-col-5 mv0 mint blurb">The UK’s first vertical play wall</p>
+							</div>
+						</a>
+					<!-- </div> -->
 				</div>
-				<div class="arrow">
+				</div>
+				<div class="arrow" id="arrow">
 				<a href="http://localhost:8888/fosse-park/"><img src="http://localhost:8888/wp-content/uploads/2022/02/right-arrow.svg"></a>
 				</div>
 			</section>
 
 			<section class="proj2" data-parallax="#FFE500">
 				<div class="project">
-					<div class="project-details">
-					<img src="http://localhost:8888/wp-content/uploads/2020/10/dm-2020-bath-uni-edge-300dpi-0428.jpg" class="photo-desktop">
-					<img src="edge-portrait.jpg" class="photo-mobile">
+					<div class="project-details" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2020/10/dm-2020-bath-uni-edge-300dpi-0428.jpg');">
+					<!-- <img src="http://localhost:8888/wp-content/uploads/2020/10/dm-2020-bath-uni-edge-300dpi-0428.jpg" class="photo-desktop">
+					<img src="edge-portrait.jpg" class="photo-mobile"> -->
 						<div class="project-title-home">
 							<h2 class="col col-12 md-col-6 mv0 mint-bold title f1 red">Art, Research & Adventure</h2>
 							<p class="col col-12 md-col-5 mv0 mint blurb red">Site specific installation</p>
 						</div>
 					</div>
 				</div>
-				<div class="arrow">
+				<div class="arrow" id="arrow">
 					<img src="http://localhost:8888/wp-content/uploads/2022/02/right-arrow-red.svg">
 				</div>
 			</section>
 
 			<section class="proj3" data-parallax="#9086F9">
 				<div class="project">
-					<div class="project-details">
-					<img src="http://localhost:8888/wp-content/uploads/2022/02/Box-3.jpg" class="photo-desktop">
-					<img src="box-portrait.jpg" class="photo-mobile">
+					<div class="project-details" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/02/Box-3.jpg');">
+					<!-- <img src="http://localhost:8888/wp-content/uploads/2022/02/Box-3.jpg" class="photo-desktop">
+					<img src="box-portrait.jpg" class="photo-mobile"> -->
 						<div class="project-title-home">
 							<h2 class="col col-12 md-col-6 mv0 mint-bold title f1">The Box Guides</h2>
 							<p class="col col-12 md-col-5 mv0 mint blurb">Activity guides for children</p>
 						</div>
 					</div>
 				</div>
-				<div class="arrow">
+				<div class="arrow" id="arrow">
 					<img src="http://localhost:8888/wp-content/uploads/2022/02/right-arrow.svg">
 				</div>
 			</section>

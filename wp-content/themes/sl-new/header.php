@@ -35,12 +35,6 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nomadsun' ); ?></a>
 
 	<header id="masthead" class="site-header">
-
-	<!-- <div class="main-title">
-		<h1>
-		Smith & Lewarne
-		</h1>
-	</div> -->
   
 	<div class="inner-header pa3">
 	
