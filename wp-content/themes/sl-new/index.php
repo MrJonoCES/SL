@@ -62,8 +62,8 @@ get_header();
 					<!-- <img src="http://localhost:8888/wp-content/uploads/2020/10/dm-2020-bath-uni-edge-300dpi-0428.jpg" class="photo-desktop">
 					<img src="edge-portrait.jpg" class="photo-mobile"> -->
 						<div class="project-title-home">
-							<h2 class="col col-12 md-col-6 mv0 mint-bold title f1 red">Art, Research & Adventure</h2>
-							<p class="col col-12 md-col-5 mv0 mint blurb red">Site specific installation</p>
+							<h2 class="col col-12 md-col-6 mv0 mint-bold title f1">Art, Research & Adventure</h2>
+							<p class="col col-12 md-col-5 mv0 mint blurb">Site specific installation</p>
 						</div>
 					</div>
 				</div>

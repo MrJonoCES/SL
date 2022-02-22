@@ -27,19 +27,19 @@ get_header();
   <div class="project">
     <div class="contact-details ph3">
       <div class="email-form">
-      <h2 class="shrill title blue f1">Contact</h2>
+      <h2 class="mint-bold title blue f1">Keep an eye on us</h2>
           <form action="" method="post" id="subForm" class="sign-up">
           <input placeholder="Enter your email" id="fieldEmail" name="" type="email" required class="mint-bold email-input">
           <input type="submit" value="Submit" class="mint-bold submit blue">
         </form>
-      <p class="mint-bold blue">Join our mailing list</p>
+      <p class="mint blue">Join our mailing list</p>
     </div>
       <p style="margin-bottom: 20px;" class="mint-bold blue">The Ladies' Room <br>
           Spike Island <br>
           133 Cumberland Road<br> 
           Bristol, BS1 6UX<br>
       </p>
-      <p class="mint-bold blue">
+      <p class="mint blue">
         Email: studio@smithandlewarne.com <br>
         @smith_and_lewarne 
       </p>
