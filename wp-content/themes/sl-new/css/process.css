@@ -26,6 +26,14 @@
     padding: 0 40px 0 40px;
   }
 
+  .process-home {
+  width: 1040px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 75% 25%;
+  padding: 0 40px 0 40px; 
+  }
+
   div.process-container:nth-child(odd){
     flex-direction: row-reverse;
   }

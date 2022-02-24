@@ -37,18 +37,13 @@ get_header();
 			<section class="proj1" data-parallax="#FB5954">
 				<div class="project">
 				
-				<div class="project-details" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/02/DSCF5284.jpg');">
-					<!-- <div class="project-dim"> -->
-						<!-- <a href="http://localhost:8888/fosse-park/"><img src="http://localhost:8888/wp-content/uploads/2022/02/DSCF5284.jpg" class="photo-desktop"></a>
-						<img src="fosse-portrait.jpg" class="photo-mobile"> -->
-						
-						<a href="http://localhost:8888/fosse-park/">
-							<div class="project-title-home">
-								<h2 class="col col-12 md-col-6 mv0 mint-bold title f1">Fosse Park</h2>
-								<p class="col col-12 md-col-5 mv0 mint blurb">The UK’s first vertical play wall</p>
-							</div>
-						</a>
-					<!-- </div> -->
+				<div class="project-details" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/02/DSCF5284.jpg');" class="photo-desktop">
+					<a href="http://localhost:8888/fosse-park/">
+						<div class="project-title-home">
+							<h2 class="col col-12 md-col-6 mv0 mint-bold title f2 f1-ns">Fosse Park</h2>
+							<p class="col col-12 md-col-5 mv0 mint blurb">The UK’s first vertical play wall</p>
+						</div>
+					</a>
 				</div>
 				</div>
 				<div class="arrow" id="arrow">
@@ -58,7 +53,7 @@ get_header();
 
 			<section class="proj2" data-parallax="#FFE500">
 				<div class="project">
-					<div class="project-details" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2020/10/dm-2020-bath-uni-edge-300dpi-0428.jpg');">
+					<div class="project-details" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2020/10/dm-2020-bath-uni-edge-300dpi-0428.jpg');" class="photo-desktop">
 					<!-- <img src="http://localhost:8888/wp-content/uploads/2020/10/dm-2020-bath-uni-edge-300dpi-0428.jpg" class="photo-desktop">
 					<img src="edge-portrait.jpg" class="photo-mobile"> -->
 						<div class="project-title-home">
@@ -74,8 +69,8 @@ get_header();
 
 			<section class="proj3" data-parallax="#9086F9">
 				<div class="project">
-					<div class="project-details" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/02/Box-3.jpg');">
-					<!-- <img src="http://localhost:8888/wp-content/uploads/2022/02/Box-3.jpg" class="photo-desktop">
+					<div class="project-details" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/02/Box-3.jpg');" class="photo-desktop">
+					<!-- <img src="http://localhost:8888/wp-content/uploads/2022/02/Box-3.jpg" >
 					<img src="box-portrait.jpg" class="photo-mobile"> -->
 						<div class="project-title-home">
 							<h2 class="col col-12 md-col-6 mv0 mint-bold title f1">The Box Guides</h2>
@@ -94,9 +89,11 @@ get_header();
 			<h1 class="shrill process-heading tc w-100 mt0 mb3 lh-solid" style="color:blue;">Our Process</h1>
 		</div>
 	
-		<div class="process-container mx-auto">
+		<div class="process-home mx-auto">
 
-			<div class="sizeA" style="background-image:url('http://localhost:8888/wp-content/uploads/2020/01/WJ_Fosse-040220-145-scaled.jpg');"></div>
+			<div class="sizeA" style="background-image:url('http://localhost:8888/wp-content/uploads/2020/01/WJ_Fosse-040220-145-scaled.jpg');grid-row: 1/3;"></div>
+
+			<div class="sizeB" style="background-image:url('http://localhost:8888/wp-content/uploads/2020/01/WJ_Fosse-040220-229-scaled.jpg');grid-column: 2/3;"></div>
 			
 			<div class="process-text f4 ph3" style="background-color: blue;height:80px;">
 			<a href="http://localhost:8888/process/"><p style="color:#fff !important;">Find out how we approach our work</p></a>
@@ -104,9 +101,8 @@ get_header();
 
 		</div>
 
-		<!-- <div class="scribbles">
-			<p></p>
-		</div> -->
+		<div class="scribbles">
+		</div>
 	
 		</section>
 		

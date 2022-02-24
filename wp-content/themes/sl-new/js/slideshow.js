@@ -1,3 +1,6 @@
+let sliderWidth = document.querySelector('.holder div');
+let Width = sliderWidth.offsetWidth;
+
 $(".slideshow-holder").each(function () {
 
   var slide  = 0;
@@ -6,8 +9,8 @@ $(".slideshow-holder").each(function () {
   var prev   = $(this).find("a.prev");
   var next   = $(this).find("a.next");
   var pagination = $(this).find(".slider-controls span");
-  let sliderWidth = document.querySelector('.holder div');
-  let Width = sliderWidth.offsetWidth;
+
+  
   
   var moveNext = function () {
     if (slide < max - 1) {
@@ -45,5 +48,14 @@ $(".slideshow-holder").each(function () {
     moveNext();
     clearInterval(autoMove);
     ev.preventDefault();
-  });  
+  });
+  
 });
+
+window.addEventListener("resize", function(event) {
+  sliderWidth = document.querySelector('.holder div');
+  Width = sliderWidth.offsetWidth;
+
+  console.log(Width)
+});
+

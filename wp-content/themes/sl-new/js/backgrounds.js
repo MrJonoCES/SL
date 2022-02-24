@@ -28,15 +28,15 @@ inView('.proj3')
         section.classList.remove('proj3-in-viewport')
     })
 
-inView('.arrow')
-    .on('enter', section => {
-      // classList.add is the same JQuery's add.Class() method
-      // but the vanilla js version
-      section.classList.add('arrow-on')
-    })
-    .on('exit', section => {
-        section.classList.remove('arrow-on')
-    })
+// inView('.arrow')
+//     .on('enter', section => {
+//       // classList.add is the same JQuery's add.Class() method
+//       // but the vanilla js version
+//       section.classList.add('arrow-on')
+//     })
+//     .on('exit', section => {
+//         section.classList.remove('arrow-on')
+//     })
 
 inView.threshold(0.2)
 
