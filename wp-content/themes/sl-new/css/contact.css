@@ -144,10 +144,10 @@ input {
     padding-bottom: 5vh;
   }
 
-  .project-details {
+  /* .project-details {
     width: 80vw;
     transform: translateY(0%);
-  }
+  } */
 
   .title {
     width: 100%;

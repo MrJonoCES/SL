@@ -25,7 +25,6 @@
   position: relative;
   overflow: hidden;
   width: 720px;
-  padding-top: 5vh;
 }
 
 .holder {
@@ -68,7 +67,6 @@
   width: 720px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 5vh;
 }
 
 .steps {
@@ -78,7 +76,7 @@
 
 a {
   color: blue;
-  padding: 20px 0px;
+  /* padding: 20px 0px; */
   bottom: 0;
   text-decoration: none;
   z-index: 1;

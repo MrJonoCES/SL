@@ -23,9 +23,8 @@ Template Name: Information Page
 get_header();
 ?>
 
-<section class="contact">
-  <div class="project">
-    <div class="contact-details ph3">
+<section class="contact min-vh-100">
+    <div class="contact-details ph3 pv6-ns">
       <div class="email-form">
       <h2 class="mint-bold title blue f1">Keep an eye on us</h2>
           <form action="" method="post" id="subForm" class="sign-up">
@@ -61,7 +60,6 @@ get_header();
       </div>
       <img src="http://localhost:8888/wp-content/uploads/2022/02/spy-body.svg">
     </div>
-  </div>
 </section>
 
 </div><!-- #page -->
