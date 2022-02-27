@@ -28,9 +28,9 @@ get_header();
 
 			<section class="introduction">
 				<div class="intro-para">
-					<h1 class="h1-mint">
-					A collaborative illustration and design studio based in the South West of the UK
-					</h1>
+					<div class="marquee h1-mint" id="myDivId">
+						<span>A collaborative illustration and design studio based in the South West of the UK</span>
+					</div>
 				</div>
 			</section>
 
