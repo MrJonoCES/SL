@@ -156,6 +156,7 @@ function sl_new_scripts() {
 	wp_enqueue_script( 'anime', get_template_directory_uri() . '/js/anime.min.js', array(), '3.2.1', true );
 	wp_enqueue_script( 'matter', get_template_directory_uri() . '/js/matter.min.js', array(), '0.18.0', true );
 	wp_enqueue_script( 'intro', get_template_directory_uri() . '/js/intro.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'intro2', get_template_directory_uri() . '/js/intro2.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), '1.0.0', true );
 	
 	if( is_page( array( 'contact' ) ) ){
