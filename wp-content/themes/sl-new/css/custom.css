@@ -180,6 +180,17 @@ span.text-wrapper {
   position: relative; /* allows us to add animation */
 }
 
+.faces {
+  display: block;
+  height: 110vh;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+}
+
 .marquee:nth-child(odd) span {
   /* animation-direction: alternate-reverse; */
 }

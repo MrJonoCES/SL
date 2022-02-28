@@ -27,6 +27,7 @@ get_header();
 		<div class="homepage">
 
 			<section class="introduction">
+			<canvas class="faces"></canvas>
 				<div class="intro-para">
 					<div class="marquee h1-mint mm6" id="myDivId">
 					<span class="text-wrapper">
