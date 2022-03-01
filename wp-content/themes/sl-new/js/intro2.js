@@ -1,8 +1,12 @@
 const textures = [
-    "https://i.ibb.co/10znhXj/1.png",
-    "https://i.ibb.co/j6QSyZh/2.png",
-    "https://i.ibb.co/q0GrJTS/3.png",
-    "https://i.ibb.co/F48B1Jp/4.png"];
+    "http://localhost:8888/wp-content/uploads/2022/03/ball1.png",
+    "http://localhost:8888/wp-content/uploads/2022/03/ball2.png",
+    "http://localhost:8888/wp-content/uploads/2022/03/ball3.png",
+    "http://localhost:8888/wp-content/uploads/2022/03/ball4.png",
+    "http://localhost:8888/wp-content/uploads/2022/03/ball5.png",
+    "http://localhost:8888/wp-content/uploads/2022/03/ball6.png",
+    "http://localhost:8888/wp-content/uploads/2022/03/ball7.png",
+    "http://localhost:8888/wp-content/uploads/2022/03/ball8.png"];
   
   const {Engine, Render, Runner, Body, Events, Composite, Composites, Common, MouseConstraint, Mouse, World,Bodies} = Matter
   
@@ -93,13 +97,15 @@ const textures = [
           }
       });
   
-      World.add(world, Composites.stack(50, 50, 8, 3, 0, 0, function(x, y) {
+      World.add(world, Composites.stack(w * 0.4, 50, 8, 3, 0, 0, function(x, y) {
         var bodyOptions = {
           frictionAir: 0, 
           friction: 0.0001,
           restitution: 0.8,
           render: {
              sprite: {
+                xScale: 0.5,
+                yScale: 0.5,
                 texture: textures[
                       Math.floor(Math.random() * (textures.length))]
                   }

@@ -154,6 +154,12 @@ section {
 
 /* HOMEPAGE */
 
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .marquee { /* text styles for this tag are in the fonts.css file */
   /* position: absolute;
   top: 3vh;
