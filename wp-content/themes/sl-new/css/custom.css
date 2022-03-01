@@ -144,7 +144,7 @@ section {
 }
 
 .introduction {
-  min-height: 100vh;
+  height: 100vh;
   background-color: #F0D787;
 }
 
@@ -167,6 +167,7 @@ canvas {
   width: 100%;
   font-size: 5vw;
   overflow: hidden; /* hides scroll bars */
+  /* z-index: 9; */
 }
 
 @keyframes moveLeft {
@@ -180,13 +181,13 @@ canvas {
 
 /* .marquee span */
 span.text-wrapper {
-  animation: moveLeft 80s linear infinite;
+  animation: moveLeft 150s linear infinite;
   white-space: nowrap; /* keeps text on one line */
   display: block; /* overrides the default of inline */
   position: relative; /* allows us to add animation */
 }
 
-.faces {
+/* .faces {
   display: block;
   height: 110vh;
   margin: 0;
@@ -195,7 +196,7 @@ span.text-wrapper {
   top: 0;
   z-index: 1;
 
-}
+} */
 
 .marquee:nth-child(odd) span {
   /* animation-direction: alternate-reverse; */
@@ -205,7 +206,7 @@ span.text-wrapper {
   mix-blend-mode: difference;
 }
 
-.mm6 {
+/* .mm6 {
   position: relative;
   font-size: 3.3em;
 }
@@ -278,7 +279,7 @@ span.text-wrapper {
   left: 80%;
   top: 80%;
   background-color: #fc8a87;
-}
+} */
 
 .project {
   min-height: 90vh;

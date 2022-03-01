@@ -75,7 +75,7 @@ const textures = [
   
       Events.on(engine, 'afterUpdate', function(event) {
           // tween the timescale for bullet time slow-mo
-          engine.timing.timeScale += (timeScaleTarget - engine.timing.timeScale) * 0.05;
+          engine.timing.timeScale += (timeScaleTarget - engine.timing.timeScale) * 0.2;
   
           counter += 1;
   
@@ -83,10 +83,10 @@ const textures = [
           if (counter >= 60 * 1.5) {
   
               // flip the timescale
-              if (timeScaleTarget < 1) {
-                  timeScaleTarget = 1;
+              if (timeScaleTarget < 0.5) {
+                  timeScaleTarget = 0.5;
               } else {
-                  timeScaleTarget = 0.05;
+                  timeScaleTarget = 0.2;
               }
   
               // create some random forces
@@ -145,20 +145,20 @@ const textures = [
   Matter.Runner.run(engine) 
   Render.run(renderer)
   
-  let time = 0
-  const changeGravity = function () {
-    time = time + 0.001
+//   let time = 0
+//   const changeGravity = function () {
+//     time = time + 0.001
   
-    engine.world.gravity.x = Math.sin(time)
-    engine.world.gravity.y = Math.cos(time)
+//     engine.world.gravity.x = Math.sin(time)
+//     engine.world.gravity.y = Math.cos(time)
    
-    requestAnimationFrame(changeGravity)
-  }
+//     requestAnimationFrame(changeGravity)
+//   }
   
-  changeGravity()
+//   changeGravity()
   
-  window.addEventListener("deviceorientation", function (event) {
-    engine.world.gravity.x = event.gamma / 30
-    engine.world.gravity.y = event.beta / 30
-  })
+//   window.addEventListener("deviceorientation", function (event) {
+//     engine.world.gravity.x = event.gamma / 30
+//     engine.world.gravity.y = event.beta / 30
+//   })
   
