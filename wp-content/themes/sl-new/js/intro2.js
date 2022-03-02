@@ -14,8 +14,8 @@ const textures = [
   const sectionTag = document.querySelector("section.introduction")
   
   // what is the width and height of the page
-  const w = window.innerWidth
-  const h = window.innerHeight
+  let w = window.innerWidth
+  let h = window.innerHeight
   
   const engine = Engine.create()
   const world = engine.world;
@@ -140,25 +140,13 @@ const textures = [
       World.add(world, mouseConstraint);
   
   
-  
   // run both the engine, and the renderer
   Matter.Runner.run(engine) 
   Render.run(renderer)
-  
-//   let time = 0
-//   const changeGravity = function () {
-//     time = time + 0.001
-  
-//     engine.world.gravity.x = Math.sin(time)
-//     engine.world.gravity.y = Math.cos(time)
-   
-//     requestAnimationFrame(changeGravity)
-//   }
-  
-//   changeGravity()
-  
-//   window.addEventListener("deviceorientation", function (event) {
-//     engine.world.gravity.x = event.gamma / 30
-//     engine.world.gravity.y = event.beta / 30
-//   })
-  
+
+  window.addEventListener("resize", function(event) {
+    w = window.innerWidth
+    h = window.innerHeight
+     
+    console.log(w, h)
+  });  

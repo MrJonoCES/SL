@@ -27,23 +27,16 @@ get_header();
 		<div class="homepage">
 
 			<section class="introduction">
-			<!-- <canvas class="faces"></canvas> -->
 				<div class="intro-para">
-					<div class="marquee h1-mint mm6" id="myDivId">
-					<span class="text-wrapper">
-						<span class="strap letters">A collaborative illustration and design studio based in the South West of the UK</span>
-					</span>
+					<div class="h1-mint">
+					<!-- <span class="text-wrapper"> -->
+						<!-- <span class="strap letters"> -->
+							A collaborative illustration and design studio based in the South West of the UK
+						<!-- </span> -->
+					<!-- </span> -->
 					</div>
 				</div>
 
-				<!-- <span class="shape circle"></span>
-				<span class="shape circle"></span>
-				<span class="shape circle"></span>
-				<span class="shape circle"></span>
-				<span class="shape circle"></span>
-				<span class="shape circle"></span>
-				<span class="shape circle"></span>
-				<span class="shape circle"></span> -->
 			</section>
 
 			<section class="proj1" data-parallax="#FB5954">
