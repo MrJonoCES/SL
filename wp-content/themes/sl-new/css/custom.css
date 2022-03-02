@@ -160,6 +160,10 @@ canvas {
   left: 0;
 }
 
+canvas.canvas {
+  z-index: -1;
+}
+
 .marquee { /* text styles for this tag are in the fonts.css file */
   /* position: absolute;
   top: 3vh;
@@ -369,7 +373,7 @@ top: 0;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
   
 

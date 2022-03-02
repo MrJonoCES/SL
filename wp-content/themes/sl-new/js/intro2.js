@@ -1,25 +1,32 @@
 const textures = [
-    "http://localhost:8888/wp-content/uploads/2022/03/ball1.png",
-    "http://localhost:8888/wp-content/uploads/2022/03/ball2.png",
-    "http://localhost:8888/wp-content/uploads/2022/03/ball3.png",
-    "http://localhost:8888/wp-content/uploads/2022/03/ball4.png",
-    "http://localhost:8888/wp-content/uploads/2022/03/ball5.png",
-    "http://localhost:8888/wp-content/uploads/2022/03/ball6.png",
-    "http://localhost:8888/wp-content/uploads/2022/03/ball7.png",
-    "http://localhost:8888/wp-content/uploads/2022/03/ball8.png"];
+"http://localhost:8888/wp-content/uploads/2022/03/ball1.png",
+"http://localhost:8888/wp-content/uploads/2022/03/ball2.png",
+"http://localhost:8888/wp-content/uploads/2022/03/ball3.png",
+"http://localhost:8888/wp-content/uploads/2022/03/ball4.png",
+"http://localhost:8888/wp-content/uploads/2022/03/ball5.png",
+"http://localhost:8888/wp-content/uploads/2022/03/ball6.png",
+"http://localhost:8888/wp-content/uploads/2022/03/ball7.png",
+"http://localhost:8888/wp-content/uploads/2022/03/ball8.png"];
+
+const {Engine, Render, Runner, Body, Events, Composite, Composites, Common, MouseConstraint, Mouse, World,Bodies} = Matter
+
+let engine = Engine.create()
+
+// where is matter being deployed
+const sectionTag = document.querySelector("section.introduction")
   
-  const {Engine, Render, Runner, Body, Events, Composite, Composites, Common, MouseConstraint, Mouse, World,Bodies} = Matter
-  
-  // where is matter being deployed
-  const sectionTag = document.querySelector("section.introduction")
-  
-  // what is the width and height of the page
+function init() {
+
   let w = window.innerWidth
   let h = window.innerHeight
+
+  engine.events = {};
+  World.clear(engine.world);
+  Engine.clear(engine);
+  engine = Engine.create();
   
-  const engine = Engine.create()
   const world = engine.world;
-  const renderer = Render.create({
+  let renderer = Render.create({
     element: sectionTag,
     engine: engine,
     options: {
@@ -97,7 +104,7 @@ const textures = [
           }
       });
   
-      World.add(world, Composites.stack(w * 0.4, 50, 8, 3, 0, 0, function(x, y) {
+      World.add(world, Composites.stack(w * 0.4, 50, 5, 3, 0, 0, function(x, y) {
         var bodyOptions = {
           frictionAir: 0, 
           friction: 0.0001,
@@ -124,6 +131,7 @@ const textures = [
   
           }
       }));
+      
   
       // add mouse control
       var mouse = Mouse.create(renderer.canvas),
@@ -144,9 +152,11 @@ const textures = [
   Matter.Runner.run(engine) 
   Render.run(renderer)
 
-  window.addEventListener("resize", function(event) {
-    w = window.innerWidth
-    h = window.innerHeight
-     
-    console.log(w, h)
-  });  
+}
+ 
+init();
+
+
+$(window).resize(function () {
+    init();
+});

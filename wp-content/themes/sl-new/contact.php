@@ -24,8 +24,7 @@ get_header();
 ?>
 
 <section class="contact">
-  <div class="project">
-    <div class="contact-details ph3">
+    <div class="contact-details ph3 mv6-ns">
       <div class="email-form">
       <h2 class="mint-bold title blue f1">Keep an eye on us</h2>
           <form action="" method="post" id="subForm" class="sign-up">
@@ -34,7 +33,7 @@ get_header();
         </form>
       <p class="mint blue">Join our mailing list</p>
     </div>
-      <p style="margin-bottom: 20px;" class="mint-bold blue">The Ladies' Room <br>
+      <p class="mint-bold blue">The Ladies' Room <br>
           Spike Island <br>
           133 Cumberland Road<br> 
           Bristol, BS1 6UX<br>
@@ -61,7 +60,6 @@ get_header();
       </div>
       <img src="http://localhost:8888/wp-content/uploads/2022/02/spy-body.svg">
     </div>
-  </div>
 </section>
 
 </div><!-- #page -->

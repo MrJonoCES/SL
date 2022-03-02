@@ -70,31 +70,18 @@ div.iris div {
   border: solid 10px white;
   border-style: double;
 	transform: translate(-50%, -50%);
+  transition: all 0.1s ease;
 }
-/* 
-section {
-  position: relative;
-  padding: 5vh 0 5vh 0;
-} */
 
 section.contact {
   background-color: #80FFDB;
   position: relative;
-  padding: 5vh 0 5vh 0;
+  height: 100vh;
 }
 
-.project {
-  min-height: 90vh;
-  /* height: 90vh; */
-  display: flex;
-  align-items: center;
-}
-
-
-
-.title {
+/* .title {
   align-self: end;
-}
+} */
 
 .email-form {
   margin-bottom: 50px;
@@ -116,7 +103,6 @@ input {
 }
 
 .email-input {
-	/* this will tell our input to stretch out and fill the available space */
   flex: 1;
 }
 
@@ -134,10 +120,6 @@ input {
     font-size: 20px;
   }
 
-  h2.patrona {
-    font-size: 32px;
-  }
-
   .project {
     min-height: 60vh;
     padding-top: 5vh;
@@ -153,10 +135,6 @@ input {
     width: 100%;
     margin-top: 15px;
   }
-/* 
-  section {
-    height: auto;
-  } */
 
   .contact {
   min-height: 120vh;
