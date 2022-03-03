@@ -19,7 +19,7 @@ const textures = [
 function init() {
     let width = $(window).width();
     let height = $(document).height();
-    let vmin = Math.min(width, height);
+    // let vmin = Math.min(width, height);
 
     engine.events = {};
     World.clear(engine.world);
@@ -54,9 +54,6 @@ function init() {
     ]);
 
    function createBall() {
-
-
-
 
         const ORIGINAL_SIZE = 120;
         const SIZE = Math.floor(Math.random() * 76) + 30;

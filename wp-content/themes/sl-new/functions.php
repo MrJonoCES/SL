@@ -145,25 +145,19 @@ function sl_new_scripts() {
 
 	wp_enqueue_style( 'sl-new-custom', get_template_directory_uri() . '/css/custom.css');
 	wp_enqueue_style( 'basscss', get_template_directory_uri() . '/css/basscss.min.css');
-	wp_enqueue_style( 'slideshow', get_template_directory_uri() . '/css/slideshow.css');
 	wp_enqueue_style( 'fonts', get_template_directory_uri() . '/css/fonts.css');
+
 	wp_enqueue_style( 'process', get_template_directory_uri() . '/css/process.css');
-	wp_enqueue_style( 'contact', get_template_directory_uri() . '/css/contact.css');
 	// wp_enqueue_style( 'nav', get_template_directory_uri() . '/css/nav.css');
-	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.6.0.js', array(), '3.6.0', true );
 	wp_enqueue_script( 'jquery-min', get_template_directory_uri() . '/js/jquery.min.js', array(), '3.3.1', true );
-	wp_enqueue_script( 'sl-new-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0.0', true );
-	// wp_enqueue_script( 'anime', get_template_directory_uri() . '/js/anime.min.js', array(), '3.2.1', true );
 	wp_enqueue_script( 'matter', get_template_directory_uri() . '/js/matter.min.js', array(), '0.18.0', true );
-	// wp_enqueue_script( 'intro', get_template_directory_uri() . '/js/intro.js', array(), '1.0.0', true );
-	// wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), '1.0.0', true );
 	
 	if( is_page( array( 'contact' ) ) ){
+		wp_enqueue_style( 'contact', get_template_directory_uri() . '/css/contact.css');
         wp_enqueue_script( 'eyes', get_template_directory_uri() . '/js/eyes.js', array(), '1.0.0', true );
 	}
 
 	if( is_page( array( 'projects' ) ) ){
-		wp_enqueue_script( 'poly-decomp', get_template_directory_uri() . '/js/poly-decomp.js', array());
 		wp_enqueue_script( 'projects', get_template_directory_uri() . '/js/projects.js', array(), '1.0.0', true );
 	}
 
@@ -177,6 +171,7 @@ function sl_new_scripts() {
 
 	if( is_singular('post') )
     {
+		wp_enqueue_style( 'slideshow', get_template_directory_uri() . '/css/slideshow.css');
 		wp_enqueue_script( 'title', get_template_directory_uri() . '/js/title.js', array(), '1.0.0', true );
 		wp_enqueue_script( 'slideshow', get_template_directory_uri() . '/js/slideshow.js', array(), '1.0.0', true );
     }
