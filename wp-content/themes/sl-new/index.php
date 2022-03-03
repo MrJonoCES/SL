@@ -18,7 +18,7 @@ get_header();
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 
-	<div class="main-title main-title-onn pt2">
+	<div class="main-title absolute pt2 w-100">
 		<h1 class="tc mv0">
 		Smith & Lewarne
 		</h1>
@@ -26,64 +26,56 @@ get_header();
 
 		<div class="homepage">
 
-			<section class="introduction">
-				<div class="intro-para">
+			<section class="introduction min-vh-100">
+				<div class="intro-para w-50 tc absolute">
 					<div class="h1-mint">
-					<!-- <span class="text-wrapper"> -->
-						<!-- <span class="strap letters"> -->
 							A collaborative illustration and design studio based in the South West of the UK
-						<!-- </span> -->
-					<!-- </span> -->
 					</div>
 				</div>
 
 			</section>
 
 			<section class="proj1" data-parallax="#FB5954">
-				<div class="project">
+				<div class="project flex items-center min-vh-90">
 				
-				<div class="project-details" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/02/DSCF5284.jpg');" class="photo-desktop">
+				<div class="project-details relative mx-auto justify-between" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/02/DSCF5284.jpg');" class="photo-desktop">
 					<a href="http://localhost:8888/fosse-park/">
-						<div class="project-title-home">
+						<div class="project-title-home absolute flex justify-between">
 							<h2 class="col col-12 md-col-6 mv0 mint-bold title f2 f1-ns">Fosse Park</h2>
 							<p class="col col-12 md-col-5 mv0 mint blurb">The UK’s first vertical play wall</p>
 						</div>
 					</a>
 				</div>
 				</div>
-				<div class="arrow" id="arrow">
+				<div class="arrow absolute" id="arrow">
 				<a href="http://localhost:8888/fosse-park/"><img src="http://localhost:8888/wp-content/uploads/2022/02/right-arrow.svg"></a>
 				</div>
 			</section>
 
 			<section class="proj2" data-parallax="#FFE500">
-				<div class="project">
-					<div class="project-details" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2020/10/dm-2020-bath-uni-edge-300dpi-0428.jpg');" class="photo-desktop">
-					<!-- <img src="http://localhost:8888/wp-content/uploads/2020/10/dm-2020-bath-uni-edge-300dpi-0428.jpg" class="photo-desktop">
-					<img src="edge-portrait.jpg" class="photo-mobile"> -->
-						<div class="project-title-home">
+				<div class="project flex items-center min-vh-90">
+					<div class="project-details relative mx-auto justify-between" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2020/10/dm-2020-bath-uni-edge-300dpi-0428.jpg');" class="photo-desktop">
+						<div class="project-title-home absolute flex justify-between">
 							<h2 class="col col-12 md-col-6 mv0 mint-bold title f1">Art, Research & Adventure</h2>
 							<p class="col col-12 md-col-5 mv0 mint blurb">Site specific installation</p>
 						</div>
 					</div>
 				</div>
-				<div class="arrow" id="arrow">
+				<div class="arrow absolute" id="arrow">
 					<img src="http://localhost:8888/wp-content/uploads/2022/02/right-arrow-red.svg">
 				</div>
 			</section>
 
 			<section class="proj3" data-parallax="#9086F9">
-				<div class="project">
-					<div class="project-details" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/02/Box-3.jpg');" class="photo-desktop">
-					<!-- <img src="http://localhost:8888/wp-content/uploads/2022/02/Box-3.jpg" >
-					<img src="box-portrait.jpg" class="photo-mobile"> -->
-						<div class="project-title-home">
+				<div class="project flex items-center min-vh-90">
+					<div class="project-details relative mx-auto justify-between" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/02/Box-3.jpg');" class="photo-desktop">
+						<div class="project-title-home absolute flex justify-between">
 							<h2 class="col col-12 md-col-6 mv0 mint-bold title f1">The Box Guides</h2>
 							<p class="col col-12 md-col-5 mv0 mint blurb">Activity guides for children</p>
 						</div>
 					</div>
 				</div>
-				<div class="arrow" id="arrow">
+				<div class="arrow absolute" id="arrow">
 					<img src="http://localhost:8888/wp-content/uploads/2022/02/right-arrow.svg">
 				</div>
 			</section>

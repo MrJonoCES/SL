@@ -35,9 +35,9 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nomadsun' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header fixed w-100">
   
-	<div class="inner-header pa2 pa3-ns">
+	<div class="inner-header fixed flex items-center justify-between mx-auto pa2 pa3-ns">
 	
 		<h2 class="mint-bold mv0 tl">
 		<a href="http://localhost:8888/">Smith & Lewarne</a>

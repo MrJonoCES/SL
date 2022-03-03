@@ -24,7 +24,7 @@ get_header();
 ?>
 
 <section class="contact">
-    <div class="contact-details ph3 mv6-ns">
+    <div class="contact-details mx-auto ph3 mv6-ns">
       <div class="email-form">
       <h2 class="mint-bold title blue f1">Keep an eye on us</h2>
           <form action="" method="post" id="subForm" class="sign-up">

@@ -3,25 +3,9 @@ body {
     height: 100%;
 }
 
-.tunnel circle,
-#crosses path,
-.squares rect {
-  transform-origin: center;
-}
-
-.bg-an {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100%;
-  z-index: -10;
-}
-
 /* HERO */
 
 .hero {
-  min-height: 100vh;
-  position: relative;
   top: 0;
   left: 0;
   transition: all 0.5s ease;
@@ -32,15 +16,12 @@ body {
 }
 
 .hero-screen {
-  width: 100vw;
-  height: 100vh;
   mix-blend-mode: screen;
   z-index: 100;
   transition: all 0.5s ease;
 }
 
 .hero-slide {
-  position: absolute;
   top: 0;
   left: 0;
   transition: all 0.5s ease;
@@ -53,7 +34,6 @@ body {
 .big-title {
   font-size: 168px;
   mix-blend-mode: multiply;
-  position: absolute;
   top: 0;
   left: 0;
   transition: all 0.5s ease;
@@ -71,29 +51,17 @@ body {
 /* HEADER */
 
 header {
-  width: 100%;
   height: 70px;
   background-color: #fff;
-  position: fixed;
   margin-bottom: 10vh;
   z-index: 9999;
 }
-
-/* .header-small {
-  height: 70px;
-  transition: all 0.5s ease;
-} */
 
 .inner-header {
   width: 72%;
   max-width: 1000px;
   height: 70px;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
   top: 0;
-  margin-left: auto;
-  margin-right: auto;
   transition: all 0.5s ease;
   left: 50%;
   transform: translateX(-50%);
@@ -116,12 +84,9 @@ header {
 }
 
 .main-title {
-  position: absolute;
-  width: 100%;
   background-color: #fff;
   left: 0;
   top: -150px;
-  /* transform: translate(-50%, -50%); */
   transition: top 1s ease;
   height: 150px;
   z-index: 99999;
@@ -144,7 +109,6 @@ section {
 }
 
 .introduction {
-  height: 100vh;
   background-color: #F0D787;
 }
 
@@ -164,49 +128,7 @@ canvas.canvas {
   z-index: -1;
 }
 
-.marquee { /* text styles for this tag are in the fonts.css file */
-  /* position: absolute;
-  top: 3vh;
-  left: 0; */
-  /* width: 100%;
-  font-size: 5vw;
-  overflow: hidden; hides scroll bars */
-  /* z-index: 9; */
-}
-
-/* @keyframes moveLeft {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-3000vw);
-  }
-} */
-
-/* span.text-wrapper {
-  animation: moveLeft 150s linear infinite;
-  white-space: nowrap; keeps text on one line
-  display: block; overrides the default of inline
-  position: relative; allows us to add animation
-} */
-
-/* .marquee:nth-child(odd) span {
-  animation-direction: alternate-reverse;
-} */
-
-.difference {
-  mix-blend-mode: difference;
-}
-
-.project {
-  min-height: 90vh;
-  /* height: 90vh; */
-  display: flex;
-  align-items: center;
-}
-
 .arrow {
-  position: absolute;
   top: 50%;
   right: 20%;
   transform: translateX(50%);
@@ -231,11 +153,7 @@ canvas.canvas {
 }
 
 .proj1-in-viewport {
-  /* background-color: #FB5954; */
   background-image: url("http://localhost:8888/wp-content/uploads/2022/02/fosse-chevrons.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   transition: background-image 2s ease;
 }
 
@@ -249,11 +167,7 @@ canvas.canvas {
 }
 
 .proj2-in-viewport {
-  /* background-color: #FFE500; */
   background-image: url("http://localhost:8888/wp-content/uploads/2022/02/network.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   transition: background-image 2s ease;
 }
 
@@ -267,35 +181,22 @@ canvas.canvas {
 }
 
 .proj3-in-viewport {
-  /* background-color: #9086F9; */
   background-image: url("http://localhost:8888/wp-content/uploads/2022/02/box.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   transition: background-image 2s ease;
 }
 
 .intro-para {
-  width: 50%;
-  text-align: center;
-  position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
   left: 50%;
-  /* opacity: 1;
-  transition: opacity 2s ease; */
 }
 
 .project-details {
   width: 55vw;
   height: 38vw;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-between;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
   overflow: hidden;
 }
 
@@ -307,13 +208,9 @@ canvas.canvas {
 }
 
 .project-title-home {
-  display: flex;
-  justify-content: space-between;
-  /* grid-template-columns: 50% 50%; */
   color: #fff;
   min-height: 38vw;
   margin-top: 15px;
-  position: absolute;
   bottom: 0px;
   width: 55vw;
   background-color: rgba(0, 0, 0, 0.3);
@@ -324,15 +221,6 @@ canvas.canvas {
 
 .title-on {
   opacity: 1;
-}
-
-.photo-desktop {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.photo-mobile {
-  display: none;
 }
 
 .scribbles {
@@ -346,9 +234,6 @@ background-position: center;
 background-repeat: no-repeat;
 position: absolute;
 top: 0;
-}
-
-.scribbles::before {
 }
 
 /* ALL PROJECTS */
@@ -371,21 +256,9 @@ top: 0;
 .contact-details {
   width: 72%;
   max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  /* justify-content: space-between; */
 }
-  
 
 /* PROJECT PAGES */
-
-.text-block h3 {
-  font-size: 20px;
-  margin-top: 0;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-} 
 
 .gallery-image img {
   width: 100% !important;
@@ -393,17 +266,8 @@ top: 0;
   display: block;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 div.gallery:nth-child(even){
   flex-direction: row-reverse;
-}
-
-.two-col {
-  justify-content: space-between;
 }
 
 .slider-controls {
@@ -411,14 +275,6 @@ div.gallery:nth-child(even){
 }
 
 /* MEDIA QUERIES */
-/* 
-@media screen and (min-width: 800px) {
-
-.mob-nav {
-  display: none;
-}
-
-} */
 
 @media screen and (max-width: 425px) {
 
@@ -552,21 +408,10 @@ header a {
 .photo-desktop {
   display: none;
 }
-
-.photo-mobile {
-  display: block;
-  width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slideshow-holder {
-  /* display: none; */
-}
-
+/* 
 .gallery2 {
   display: block;
-}
+} */
 
 .big-title {
   font-size: 68px;
@@ -641,12 +486,7 @@ height: 240px !important;
 
 .inner-header {
   width: 90vw;
-  align-items: center;
 }
-
-/* .main-navigation {
-  display: none;
-} */
 
 .main-title h1 {
   font-size: 60px !important;

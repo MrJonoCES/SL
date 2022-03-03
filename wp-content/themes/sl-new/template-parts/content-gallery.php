@@ -1,4 +1,4 @@
-<div class="gallery container mx-auto">
+<div class="gallery flex flex-wrap container mx-auto">
   <?php $images = get_sub_field('gallery'); ?>
   <?php foreach($images as $image) : ?> 
 

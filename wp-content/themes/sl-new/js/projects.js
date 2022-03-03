@@ -56,7 +56,7 @@ function init() {
    function createBall() {
 
         const ORIGINAL_SIZE = 120;
-        const SIZE = Math.floor(Math.random() * 76) + 30;
+        const SIZE = Math.floor(Math.random() * 76) + 120;
         const ball = Bodies.circle(Math.round(Math.random() * width), -30, 29, {
             angle: Math.PI * (Math.random() * 2 - 1),
             friction: 0.001,
