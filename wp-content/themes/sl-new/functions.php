@@ -163,7 +163,8 @@ function sl_new_scripts() {
 	}
 
 	if( is_page( array( 'projects' ) ) ){
-        wp_enqueue_script( 'projects', get_template_directory_uri() . '/js/projects.js', array(), '1.0.0', true );
+		wp_enqueue_script( 'poly-decomp', get_template_directory_uri() . '/js/poly-decomp.js', array());
+		wp_enqueue_script( 'projects', get_template_directory_uri() . '/js/projects.js', array(), '1.0.0', true );
 	}
 
 	if( is_front_page() )

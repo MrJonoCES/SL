@@ -5,14 +5,16 @@ let engine = Engine.create();
 
 
 const textures = [
-    "http://localhost:8888/wp-content/uploads/2022/03/ball1.png",
-    "http://localhost:8888/wp-content/uploads/2022/03/ball2.png",
-    "http://localhost:8888/wp-content/uploads/2022/03/ball3.png",
-    "http://localhost:8888/wp-content/uploads/2022/03/ball4.png",
-    "http://localhost:8888/wp-content/uploads/2022/03/ball5.png",
-    "http://localhost:8888/wp-content/uploads/2022/03/ball6.png",
-    "http://localhost:8888/wp-content/uploads/2022/03/ball7.png",
-    "http://localhost:8888/wp-content/uploads/2022/03/ball8.png"];
+    "http://localhost:8888/wp-content/uploads/2022/03/shape1.svg",
+    "http://localhost:8888/wp-content/uploads/2022/03/shape2.svg",
+    "http://localhost:8888/wp-content/uploads/2022/03/shape3.svg",
+    "http://localhost:8888/wp-content/uploads/2022/03/shape4.svg",
+    "http://localhost:8888/wp-content/uploads/2022/03/shape5.svg",
+    "http://localhost:8888/wp-content/uploads/2022/03/shape6.svg",
+    "http://localhost:8888/wp-content/uploads/2022/03/shape7.svg",
+    "http://localhost:8888/wp-content/uploads/2022/03/shape8.svg",
+    "http://localhost:8888/wp-content/uploads/2022/03/shape9.svg",
+    "http://localhost:8888/wp-content/uploads/2022/03/shape10.svg"];
 
 function init() {
     let width = $(window).width();
@@ -35,29 +37,27 @@ function init() {
         }
     });
 
-    // World.add(engine.world, [
-    //     Bodies.rectangle(width / 2, height + 50, width, 100, {
-    //         isStatic: true,
-    //         render: {
-    //             fillStyle: "green"
-    //         }
-    //     }),
+    World.add(engine.world, [
+        Bodies.rectangle(width / 2, height + 50, width, 100, {
+            isStatic: true,
+            render: {
+                fillStyle: "green"
+            }
+        }),
 
-    //     Bodies.rectangle(-50, height / 2, 100, height, {
-    //         isStatic: true
-    //     }),
-    //     Bodies.rectangle(width + 50, height / 2, 100, height, {
-    //         isStatic: true
-    //     }),
-    //     Bodies.rectangle(width / 2, height / 2 - 20, vmin * 0.500, .001, {//mid box
-    //         isStatic: true,
-    //         render: {
-    //             fillStyle: "red"
-    //         }
-    //     }),
-    // ]);
+        Bodies.rectangle(-50, height / 2, 100, height, {
+            isStatic: true
+        }),
+        Bodies.rectangle(width + 50, height / 2, 100, height, {
+            isStatic: true
+        }),
+    ]);
 
    function createBall() {
+
+
+
+
         const ORIGINAL_SIZE = 120;
         const SIZE = Math.floor(Math.random() * 76) + 30;
         const ball = Bodies.circle(Math.round(Math.random() * width), -30, 29, {
@@ -90,7 +90,7 @@ function init() {
         const ball2 = createBall();
         World.add(engine.world, [ball2]);
     };
-    setInterval(handleClick, 200)
+    setInterval(handleClick, 300)
 }
 
 init();
