@@ -24,7 +24,7 @@
 .slideshow {
   position: relative;
   overflow: hidden;
-  width: 720px;
+  width: 100vw;
   padding-top: 5vh;
 }
 
@@ -39,36 +39,25 @@
 
 .holder div {
   float: left;
-  width: 720px;
-  height: 480px;
+  width: 100vw;
+  height: 65vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20px 30px;
 }
 
-/* .slide-1 {
-  background-image: url(boyce_1.jpg);
-}
-
-.slide-2 {
-  background-image: url(boyce_2.jpg);
-}
-
-.slide-3 {
-  background-image: url(boyce_3.jpg);
-}
-
-.slide-4 {
-  background-image: url(boyce_4.jpg);
-} */
-
-
 .slider-controls {
-  width: 720px;
+  width: 90vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 5vh;
+  margin: 0 auto 5vh auto;
+}
+
+.slider-controls a {
+  font-family: "Mint", sans-serif;
+  font-size: 16px;
+  margin-top: 16px;
 }
 
 .steps {

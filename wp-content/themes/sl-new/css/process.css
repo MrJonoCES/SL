@@ -1,11 +1,88 @@
+/* PROCESS */
+
+.process {
+  background-size: 40px 40px;
+  background-color: #fff;
+  background-position: top; 
+  padding-bottom: 40px;
+  padding-top: 0;
+}
+
+.process-title {
+  width: 90%;
+}
+
+.process-home {
+  width: 320px;
+  display: block;
+  padding: 0;
+}
+
+.sizeA {
+  margin: 40px auto 0 auto;
+  width: 280px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sizeB {
+  margin: 40px auto 0 auto;
+  width: 280px;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.process-text {
+  margin: 40px auto 0 auto;
+  width: 280px;
+  color: #fff;
+}
+
+.process-text p {
+  margin: 0;
+  padding: 16px;
+  line-height: 1.3;
+}
+
+.process-heading {
+  font-size: 64px;
+  line-height: 1.25;
+  height: 160px;
+  padding-top: 14px;
+}
+
+.projects-grid {
+  grid-template-columns: 1fr;
+}
+
+.two-square {
+  height: 160px;
+}
+.three-square {
+  height: 160px;
+}
+.four-square {
+  height: 320px;
+}
+.five-square {
+  height: 400px;
+}
+.six-square {
+  height: 480px;
+}
+
+@media screen and (max-width: 800px) and (min-width: 426px) {
+
 .process {
     min-height: 960px;
     background-size: 80px 80px;
     /* background-image:
       linear-gradient(to right, #FB5954 1px, transparent 1px),
       linear-gradient(to bottom, #FB5954 1px, transparent 1px); */
-    background-color: #fff;
-    background-position: top; 
     padding: 0 0 80px 0;
   }
 
@@ -44,9 +121,6 @@
     flex-basis: 400px;
     flex-grow: 0;
     flex-shrink: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   .sizeB {
@@ -148,12 +222,5 @@
   .three-square {
     height: 240px;
   }
-  .four-square {
-    height: 320px;
-  }
-  .five-square {
-    height: 400px;
-  }
-  .six-square {
-    height: 480px;
-  }
+
+}

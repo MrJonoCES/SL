@@ -79,26 +79,23 @@ section.contact {
   height: 100vh;
 }
 
-/* .title {
-  align-self: end;
-} */
-
 .email-form {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  padding-top: 10px;
 }
 
 .sign-up {
   display: flex;
   border-bottom: solid 2px #1C33DB;
   padding-bottom: 12px;
-  margin: 50px 0 10px 0;
+  margin: 40px 0 10px 0;
   width: 50%;
 }
 
 input {
   background: none;
   border: none;
-  font-size: 20px;
+  /* font-size: 20px; */
   outline: none;
 }
 
@@ -116,9 +113,9 @@ input {
 
 @media (max-width: 840px) {
 
-  h2 {
+  /* h2 {
     font-size: 20px;
-  }
+  } */
 
   .project {
     min-height: 60vh;
@@ -134,17 +131,23 @@ input {
   .title {
     width: 100%;
     margin-top: 15px;
+    font-size: 24px;
   }
 
   .contact {
-  min-height: 120vh;
+  /* min-height: 120vh; */
   overflow: hidden;
   padding-top: 0px;
   }
 
+  .contact-details {
+    margin-top: 100px;
+  }
+
   .spy {
-  bottom: -240px;
-  right: -100px;
+  bottom: -290px;
+  right: -50px;
+  zoom: 0.7;
   }
 
   .email-input {

@@ -12,14 +12,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="entry-content">
-		<!-- if we have some flexible content, let’s loop through it -->
 		<?php if( have_rows('content') ): while ( have_rows('content') ) : the_row();
-			// if it’s a header, go through the data
 			if( get_row_layout() == 'header' ): ?>
 
 			<?php get_template_part( 'template-parts/content-header' ); ?>
 
-			<!-- if it’s a text component, show us the data -->
 			<?php elseif( get_row_layout() == 'text_block' ): ?>
 
 			<?php get_template_part( 'template-parts/content-text' ); ?>

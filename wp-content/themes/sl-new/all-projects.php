@@ -13,7 +13,7 @@ get_header(); ?>
     
     <?php if ( $wpb_all_query->have_posts() ) : ?>
     
-        <div class="projects-grid mt5 mx-auto ph3">
+        <div class="projects-grid mt5 mx-auto ph3 pb2">
             <canvas class="canvas"></canvas>
         
             <!-- the loop -->
@@ -24,7 +24,7 @@ get_header(); ?>
                 <a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'category-thumb', array('class' => 'post-thumb')); ?></a>
             </div>
 
-                <h2 class="mint-bold"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+                <h2 class="mint-bold mt0"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
             
             </div>
             <?php endwhile; ?>
