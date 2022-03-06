@@ -155,6 +155,8 @@ function init() {
   Matter.Runner.run(engine) 
   Render.run(renderer)
 
+  console.log(w, h)
+
 }
  
 init();
