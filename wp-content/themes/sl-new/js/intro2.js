@@ -105,6 +105,22 @@ function init() {
       });
   
       World.add(world, Composites.stack(w * 0.4, 50, 5, 3, 0, 0, function(x, y) {
+
+        if (window.innerWidth < 800) {
+            var bodyOptions = {
+              frictionAir: 0, 
+              friction: 0.0001,
+              restitution: 0.8,
+              render: {
+                 sprite: {
+                    xScale: 0.2,
+                    yScale: 0.2,
+                    texture: textures[
+                          Math.floor(Math.random() * (textures.length))]
+                      }
+                  }
+            }
+        } else {
         var bodyOptions = {
           frictionAir: 0, 
           friction: 0.0001,
@@ -117,7 +133,8 @@ function init() {
                       Math.floor(Math.random() * (textures.length))]
                   }
               }
-      };
+      };}
+
           switch (Math.round(Common.random(0, 1))) {
   
           case 0:

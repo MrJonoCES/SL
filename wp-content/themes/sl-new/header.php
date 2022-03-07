@@ -37,9 +37,9 @@
 
 	<header id="masthead" class="pl2 site-header fixed w-100">
   
-	<div class="inner-header fixed flex-ns items-center justify-between mx-auto">
+	<div class="inner-header fixed flex-ns items-center justify-between">
 	
-		<h2 class="mint-bold mv0 pt1 pt0-ns tl">
+		<h2 class="mint-bold mv0 tl">
 		<a href="http://localhost:8888/">Smith & Lewarne</a>
 		</h2>
 

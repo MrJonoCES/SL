@@ -111,6 +111,16 @@ input {
   color: #1C33DB;
 }
 
+@media (max-width: 600px) {
+
+.spy {
+  bottom: -290px;
+  right: -50px;
+  zoom: 0.7;
+}
+
+}
+
 @media (max-width: 840px) {
 
   /* h2 {
@@ -142,12 +152,7 @@ input {
 
   .contact-details {
     margin-top: 100px;
-  }
-
-  .spy {
-  bottom: -290px;
-  right: -50px;
-  zoom: 0.7;
+    width: 90vw;
   }
 
   .email-input {

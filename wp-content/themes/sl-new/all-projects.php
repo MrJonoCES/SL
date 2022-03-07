@@ -13,7 +13,7 @@ get_header(); ?>
     
     <?php if ( $wpb_all_query->have_posts() ) : ?>
     
-        <div class="projects-grid mt5 mx-auto ph3 pb2">
+        <div class="projects-grid mt5 mx-auto pb2">
             <canvas class="canvas"></canvas>
         
             <!-- the loop -->

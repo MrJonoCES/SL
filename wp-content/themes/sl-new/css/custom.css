@@ -22,6 +22,12 @@ header a {
 .inner-header {
   display: block;
   width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.inner-header h2 {
+  padding-top: 8px;
 }
 
 .main-title {
@@ -53,7 +59,7 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -45%);
 }
 
 .intro-para h1 {
@@ -61,7 +67,7 @@ section {
 }
 
 canvas {
-  display: none;
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -73,7 +79,7 @@ canvas.canvas {
 
 .arrow {
   top: 50%;
-  right: 20%;
+  right: 15%;
   transform: translateX(50%);
   width: 180px;
   height: auto;
@@ -106,7 +112,6 @@ mix-blend-mode: multiply;
 color: #fff;
 height: 100%;
 width: 100%;
-/* margin-top: 15px; */
 bottom: 0px;
 background-color: rgba(0, 0, 0, 0.3);
 padding: 20px;
@@ -196,9 +201,28 @@ flex-direction: row-reverse;
 mix-blend-mode: exclusion;
 }
 
+/* PROJECTS GRID */
+
+.projects-grid {
+  grid-template-columns: 1fr;
+  width: 90vw;
+}
+
 /* MEDIA QUERIES */
 
+@media screen and (min-width: 426px) {
+
+.inner-header h2 {
+  padding-top: 0;
+}
+
+}
+
 @media screen and (max-width: 800px) and (min-width: 426px) {
+
+header {
+  height: 70px;
+}
 
 .title-container {
     width: 400px;
@@ -265,14 +289,14 @@ mix-blend-mode: exclusion;
 }
 
 .sizeC {
-width: 400px;
-height: 240px;
-transform: translateX(0px);
+  width: 400px;
+  height: 240px;
+  transform: translateX(0px);
 }
 
 .sizeD {
-width: 400px;
-height: 240px;
+  width: 400px;
+  height: 240px;
 }
 
 .slideshow {
@@ -297,6 +321,10 @@ height: 240px;
 
 .inner-header {
     width: 90vw;
+    display: flex;
+    height: 70px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .main-title h1 {
@@ -305,7 +333,7 @@ height: 240px;
 }
 
 .intro-para h1 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 }
@@ -314,33 +342,61 @@ height: 240px;
 
 /* HEADER */
 
+header {
+  height: 50px;
+}
+
 .inner-header {
-    display: flex;
-    width: 72%;
-    max-width: 1000px;
-    height: 70px;
-    top: 0;
-    transition: all 0.5s ease;
-    left: 50%;
-    transform: translateX(-50%);
+  display: flex;
+  width: 70%;
+  top: 0;
+  transition: all 0.5s ease;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 10px;
 }
 
 header a {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .main-title {
-    background-color: #fff;
-    left: 0;
-    top: -150px;
-    transition: top 1s ease;
-    height: 150px;
-    z-index: 99999;
+  display: block;
+  background-color: #fff;
+  left: 0;
+  top: -150px;
+  transition: top 1s ease;
+  height: 150px;
+  z-index: 99999;
 }
     
 .main-title-on {
-    top: 0;
-    transition: top 0.5s ease;
+  top: 0;
+  transition: top 0.5s ease;
+}
+
+/* HOMEPAGE */
+
+.project-details {
+  width: 70vw;
+  height: 50vw;
+}
+
+.proj3 {
+  padding-bottom: 10vh;
+}
+
+canvas {
+  display: block;
+}
+
+.project-title-home {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-title-home h2 {
+  margin-bottom: -10px;
 }
 
 /* SECTIONS */
@@ -350,7 +406,28 @@ section {
     padding: 5vh 0 5vh 0;
 }
 
+/* CONTACT */
+
+.contact-details {
+  width: 70%;
+  margin-top: 10vh;
 }
+
+.email-form p.mint-bold {
+  font-size: 40px;
+}
+
+/* PROJECTS PAGE */
+
+.projects-grid {
+  width: 70vw;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-column-gap: 40px;
+}
+
+}
+
 
 @media screen and (min-width: 1200px) {
 
@@ -361,9 +438,13 @@ section {
 /* HOMEPAGE */
 
 .intro-para {
-top: 50%;
-transform: translate(-50%, -50%);
-left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.intro-para h1 {
+  font-size: 60px;
 }
 
 .proj1 {
@@ -409,12 +490,10 @@ left: 50%;
 }
 
 .project-details {
-width: 55vw;
-height: 38vw;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-overflow: hidden;
+  width: 70vw;
+  height: 40vw;
+  max-width: 1250px;
+  max-height: 850px;
 }
 
 .project-dim {
@@ -426,18 +505,18 @@ mix-blend-mode: multiply;
 
 .project-title-home {
 color: #fff;
-min-height: 38vw;
+min-height: 100%;
 margin-top: 15px;
 bottom: 0px;
-width: 55vw;
+width: 100%;
 background-color: rgba(0, 0, 0, 0.3);
-padding: 20px;
+padding: 40px;
 opacity: 0;
 transition: opacity 1s ease;
 }
 
-.title-on {
-opacity: 1;
+.project-title-home:hover {
+  opacity: 1;
 }
 
 .scribbles {
@@ -455,14 +534,6 @@ top: 0;
 
 /* ALL PROJECTS */
 
-.projects-grid {
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-column-gap: 30px;
-grid-row-gap: 30px;
-max-width: 1000px;
-}
-
 .post-thumb {
 width: 100%;
 height: auto;
@@ -471,8 +542,7 @@ height: auto;
 /* CONTACT PAGE */
 
 .contact-details {
-width: 72%;
-max-width: 1000px;
+width: 70%;
 }
 
 }

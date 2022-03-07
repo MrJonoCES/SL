@@ -55,10 +55,6 @@
   padding-top: 14px;
 }
 
-.projects-grid {
-  grid-template-columns: 1fr;
-}
-
 .two-square {
   height: 160px;
 }
@@ -78,7 +74,7 @@
 @media screen and (max-width: 800px) and (min-width: 426px) {
 
 .process {
-    min-height: 960px;
+    /* min-height: 960px; */
     background-size: 80px 80px;
     /* background-image:
       linear-gradient(to right, #FB5954 1px, transparent 1px),
@@ -104,11 +100,8 @@
   }
 
   .process-home {
-  width: 1040px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 75% 25%;
-  padding: 0 40px 0 40px; 
+    width: 400px;
+
   }
 
   div.process-container:nth-child(odd){
@@ -117,16 +110,16 @@
 
   .sizeA {
     height: 560px;
-    margin: 80px 40px 0 40px;
-    flex-basis: 400px;
+    margin: 80px 0 0 0;
+    width: 400px;
     flex-grow: 0;
     flex-shrink: 0;
   }
 
   .sizeB {
     height: 400px;
-    margin: 80px 40px 0 40px;
-    flex-basis: 400px;
+    margin: 80px 0 0 0;
+    width: 400px;
     flex-grow: 0;
     flex-shrink: 0;
     background-size: cover;
@@ -187,21 +180,20 @@
   }
 
   .process-title {
-    width: 560px;
     height: 80px;
-    padding-top: 90px;
-    margin-bottom: 70px;
+    padding-top: 17px;
+    margin-bottom: 80px;
   }
 
   .process-heading {
-    font-size: 80px;
+    font-size: 60px;
   }
 
   .process-text {
     color: #fff;
     padding: 20px;
-    margin: 80px 40px 80px 40px;
-    flex-basis: 400px;
+    margin: 80px 0 80px 0;
+    width: 400px;
     flex-grow: 0;
     flex-shrink: 0;
     height: 400px;
@@ -222,5 +214,65 @@
   .three-square {
     height: 240px;
   }
+
+}
+
+@media screen and (min-width: 800px) {
+
+.process {
+  background-size: 80px 80px;
+}
+
+.process-home {
+  width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 75% 25%;
+  grid-column-gap: 80px;
+  padding: 0 40px 0 40px; 
+  }
+
+.sizeA {
+  width: 320px;
+  height: 480px;
+  margin-top: 0;
+}
+
+.sizeB {
+  width: 320px;
+  height: 320px;
+  margin-top: 0;
+}
+
+.process-text {
+  width: 320px;
+}
+
+}
+
+@media screen and (min-width: 1300px) {
+
+.process-home {
+  width: 1040px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 75% 25%;
+  padding: 0 0 0 0; 
+  }
+
+.sizeA {
+  width: 480px;
+  height: 560px;
+}
+
+.sizeB {
+  width: 480px;
+  height: 400px;
+}
+
+.process-text {
+  width: 480px;
+  margin: 60px auto 0 auto;
+}
 
 }

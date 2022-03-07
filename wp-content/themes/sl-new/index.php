@@ -28,9 +28,9 @@ get_header();
 
 			<section class="introduction min-vh-100">
 				<div class="intro-para w-50 tc absolute">
-					<div class="h1-mint">
-							A collaborative illustration and design studio based in the South West of the UK
-					</div>
+					<h1 class="mint-bold lh-title">
+						A collaborative illustration and design studio based in the South West of the UK
+					</h1>
 				</div>
 
 			</section>
