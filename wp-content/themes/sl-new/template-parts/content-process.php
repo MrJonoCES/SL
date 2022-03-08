@@ -21,7 +21,7 @@
         <?php $process_text = get_sub_field('process_text'); ?>
 
         <?php if(!empty($process_text)) : ?>
-        <div class="process-text <?php the_field('process_text_height', $image['id']); ?>" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
+        <div class="process-text <?php the_field('process_text_height', $image['id']); ?> <?php the_field('process_text_location', $image['id']); ?>" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
         <p>
         <?php echo $process_text; ?>
         </p>

@@ -113,8 +113,8 @@ function init() {
               restitution: 0.8,
               render: {
                  sprite: {
-                    xScale: 0.2,
-                    yScale: 0.2,
+                    xScale: 0.3,
+                    yScale: 0.3,
                     texture: textures[
                           Math.floor(Math.random() * (textures.length))]
                       }

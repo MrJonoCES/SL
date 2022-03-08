@@ -15,11 +15,11 @@
 	<p class="mint-bold w-100 mt0 mb3" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
 		<?php the_field('location'); ?>
 	</p>
-	<div class="flex-ns container justify-between" style="justify-content:space-between;">
-		<p class="measure col col-12 md-col-3 mint mt0 mb3 pr0 pr6-ns" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
+	<div class="proj-intro container" style="justify-content:space-between;">
+		<p class="measure mint mt0 mb3 pr0 pr6-ns" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
 			<?php the_field('subhead'); ?>
 		</p>
-		<p class="mint col col-12 md-col-8 mt0 mb3 pr3">
+		<p class="mint mt0 mb3 pr3">
 			<?php the_field('intro'); ?>
 		</p>
 	</div>
