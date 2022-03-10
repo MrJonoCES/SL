@@ -1,9 +1,25 @@
+.page-id-2 {
+  background-color: #80FFDB;
+}
+
 .spy {
   position: absolute;
-  bottom: 0;
+  bottom: -540px;
   right: 0;
   width: 300px;
   height: auto;
+  zoom: 0.7;
+}
+
+.shadow {
+  background: radial-gradient(50% 50%, #000 0%, #fff 100%);
+  height: 50px;
+  width: 350px;
+  opacity: 0.7;
+  mix-blend-mode: multiply;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
 }
 
 .left-eye {
@@ -74,14 +90,23 @@ div.iris div {
 }
 
 section.contact {
-  background-color: #80FFDB;
+  min-height: 100vh;
+}
+
+.contact-details {
+  width: 100vw;
   position: relative;
-  height: 100vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .email-form {
   margin-bottom: 20px;
   padding-top: 10px;
+}
+
+.title {
+  font-size: 24px;
 }
 
 .sign-up {
@@ -95,7 +120,6 @@ section.contact {
 input {
   background: none;
   border: none;
-  /* font-size: 20px; */
   outline: none;
 }
 
@@ -111,64 +135,109 @@ input {
   color: #1C33DB;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width:479px) {
+  
+.title {
+  margin-top: 15vh;
+}
+
+}
+
+@media screen and (min-width: 600px) {
 
 .spy {
-  bottom: -290px;
-  right: -50px;
+  bottom: -100px;
+  right: 60px;
   zoom: 0.7;
 }
 
 }
 
-@media (max-width: 840px) {
+@media screen and (max-width: 800px) and (min-width: 480px) {
 
-  /* h2 {
-    font-size: 20px;
-  } */
-
-  .project {
-    min-height: 60vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-  }
-
-  .project-details {
-    width: 80vw;
-    transform: translateY(0%);
-  }
-
-  .title {
-    width: 100%;
-    margin-top: 15px;
-    font-size: 24px;
-  }
-
-  .contact {
-  /* min-height: 120vh; */
-  overflow: hidden;
-  padding-top: 0px;
-  }
-
-  .contact-details {
-    margin-top: 100px;
-    width: 90vw;
-  }
-
-  .email-input {
-    padding-left: 0;
-    text-align: left;
-  }
-
-  .sign-up {
-    width: 100%;
-    display: grid;
-    border-bottom: none;
-  }
-
-  .submit {
-    text-align: left;
-    padding: 10px 0 0 0;
-  }
+.contact-details {
+  width: 90vw;
+  margin-top: 10vh;
 }
 
+.project {
+  min-height: 60vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.project-details {
+  width: 80vw;
+  transform: translateY(0%);
+}
+
+.title {
+  width: 100%;
+  margin-top: 10vh;
+  font-size: 24px;
+}
+
+.contact {
+  overflow: scroll;
+  padding-top: 0px;
+}
+
+.email-form p.mint-bold {
+  font-size: 40px;
+}
+
+.email-input {
+  padding-left: 0;
+  text-align: left;
+}
+
+.sign-up {
+  width: 100%;
+  display: grid;
+  border-bottom: none;
+}
+
+.submit {
+  text-align: left;
+  padding: 10px 0 0 0;
+}
+
+}
+
+@media screen and (min-width: 800px) {
+
+.spy {
+  bottom: -360px;
+  right: 0px;
+  zoom: 1;
+}
+
+.contact-details {
+  width: 90vw;
+  margin-top: 10vh;
+}
+
+.title {
+  font-size: 36px;
+}
+  
+}
+
+
+@media screen and (min-width: 1200px) {
+
+.contact-details {
+  max-width: calc(1000px - 2rem);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+}
+
+@media screen and (min-width: 1920px) {
+
+.contact-details {
+  max-width: calc(1250px - 2rem);
+}
+
+}

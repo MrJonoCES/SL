@@ -46,6 +46,7 @@
   margin: 0;
   padding: 16px;
   line-height: 1.3;
+  font-size: 20px;
 }
 
 .process-heading {
@@ -71,7 +72,7 @@
   height: 480px;
 }
 
-@media screen and (max-width: 800px) and (min-width: 426px) {
+@media screen and (max-width: 800px) and (min-width: 480px) {
 
 .process {
   background-size: 80px 80px;
@@ -128,7 +129,6 @@ div.process-container:nth-child(odd){
   width: 400px;
   flex-grow: 0;
   flex-shrink: 0;
-  /* transform: translateX(40px); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -193,14 +193,6 @@ div.process-container:nth-child(odd){
   flex-shrink: 0;
   height: 400px;
   align-self: flex-end;
-}
-
-.process-intro {
-  
-}
-
-div.process-text p {
-  margin: 0 !important;
 }
 
 .two-square {
@@ -284,6 +276,14 @@ div.process-text p {
 .text-first {
   grid-column: 1 / 2;
   grid-row: 1 /2;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+.process-container {
+  width: 1120px;
 }
 
 }

@@ -17,8 +17,11 @@ const sectionTag = document.querySelector("section.introduction")
   
 function init() {
 
-  let w = window.innerWidth
-  let h = window.innerHeight
+//   let w = window.innerWidth / window.devicePixelRatio
+//   let h = window.innerHeight / window.devicePixelRatio
+
+    let w = window.innerWidth
+    let h = window.innerHeight
 
   engine.events = {};
   World.clear(engine.world);
