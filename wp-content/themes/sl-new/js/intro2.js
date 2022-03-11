@@ -17,11 +17,8 @@ const sectionTag = document.querySelector("section.introduction")
   
 function init() {
 
-//   let w = window.innerWidth / window.devicePixelRatio
-//   let h = window.innerHeight / window.devicePixelRatio
-
-    let w = window.innerWidth
-    let h = window.innerHeight
+    let w = sectionTag.offsetWidth
+    let h = sectionTag.offsetHeight
 
   engine.events = {};
   World.clear(engine.world);
@@ -151,25 +148,6 @@ function init() {
   
           }
       }));
-      
-  
-    //   // add mouse control
-    //   var mouse = Mouse.create(renderer.canvas),
-    //       mouseConstraint = MouseConstraint.create(engine, {
-    //           mouse: mouse,
-    //           constraint: {
-    //               stiffness: 0.2,
-    //               render: {
-    //                   visible: false
-    //               }
-    //           }
-    //       });
-
-    // mouseConstraint.mouse.element.removeEventListener("mousewheel", mouseConstraint.mouse.mousewheel);
-    // mouseConstraint.mouse.element.removeEventListener("DOMMouseScroll", mouseConstraint.mouse.mousewheel);
-  
-    World.add(world, mouseConstraint);
-  
   
   // run both the engine, and the renderer
   Matter.Runner.run(engine) 
@@ -181,7 +159,11 @@ function init() {
  
 init();
 
+let ww = sectionTag.offsetWidth
 
-$(window).resize(function () {
-    init();
-});
+window.addEventListener("resize", function () {
+  if (ww !== sectionTag.offsetWidth) {
+    init()
+    ww = sectionTag.offsetWidth
+  }
+})
