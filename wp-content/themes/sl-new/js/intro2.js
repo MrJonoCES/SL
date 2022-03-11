@@ -4,8 +4,8 @@ const textures = [
 "http://localhost:8888/wp-content/uploads/2022/03/ball3.png",
 "http://localhost:8888/wp-content/uploads/2022/03/ball4.png",
 "http://localhost:8888/wp-content/uploads/2022/03/ball5.png",
-"http://localhost:8888/wp-content/uploads/2022/03/ball6.png",
-"http://localhost:8888/wp-content/uploads/2022/03/ball7.png",
+"http://localhost:8888/wp-content/uploads/2022/03/ball5.png",
+// "http://localhost:8888/wp-content/uploads/2022/03/ball7.png",
 "http://localhost:8888/wp-content/uploads/2022/03/ball8.png"];
 
 const {Engine, Render, Runner, Body, Events, Composite, Composites, Common, MouseConstraint, Mouse, World,Bodies} = Matter
@@ -153,20 +153,20 @@ function init() {
       }));
       
   
-      // add mouse control
-      var mouse = Mouse.create(renderer.canvas),
-          mouseConstraint = MouseConstraint.create(engine, {
-              mouse: mouse,
-              constraint: {
-                  stiffness: 0.2,
-                  render: {
-                      visible: false
-                  }
-              }
-          });
+    //   // add mouse control
+    //   var mouse = Mouse.create(renderer.canvas),
+    //       mouseConstraint = MouseConstraint.create(engine, {
+    //           mouse: mouse,
+    //           constraint: {
+    //               stiffness: 0.2,
+    //               render: {
+    //                   visible: false
+    //               }
+    //           }
+    //       });
 
-    mouseConstraint.mouse.element.removeEventListener("mousewheel", mouseConstraint.mouse.mousewheel);
-    mouseConstraint.mouse.element.removeEventListener("DOMMouseScroll", mouseConstraint.mouse.mousewheel);
+    // mouseConstraint.mouse.element.removeEventListener("mousewheel", mouseConstraint.mouse.mousewheel);
+    // mouseConstraint.mouse.element.removeEventListener("DOMMouseScroll", mouseConstraint.mouse.mousewheel);
   
     World.add(world, mouseConstraint);
   

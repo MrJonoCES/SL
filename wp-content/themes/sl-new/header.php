@@ -35,7 +35,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nomadsun' ); ?></a>
 
-	<header id="masthead" class="pl2 site-header fixed w-100">
+	<header id="masthead" class="site-header fixed w-100">
   
 	<div class="inner-header fixed flex-ns items-center justify-between">
 	

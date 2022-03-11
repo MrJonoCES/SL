@@ -286,6 +286,31 @@ div.process-container:nth-child(odd){
   width: 1120px;
 }
 
+.sizeA {
+  width: 480px;
+  height: 560px;
+}
+
+.sizeB {
+  width: 480px;
+  height: 400px;
+}
+
+.sizeC {
+  width: 880px;
+  height: 640px;
+}
+
+.sizeD {
+  width: 1040px;
+  height: 720px;
+}
+
+.process-text {
+  width: 480px;
+  margin: 60px auto 0 auto;
+}
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -298,20 +323,7 @@ div.process-container:nth-child(odd){
   padding: 0 0 0 0; 
   }
 
-.sizeA {
-  width: 480px;
-  height: 560px;
-}
 
-.sizeB {
-  width: 480px;
-  height: 400px;
-}
-
-.process-text {
-  width: 480px;
-  margin: 60px auto 0 auto;
-}
 
 }
 

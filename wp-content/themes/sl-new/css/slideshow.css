@@ -121,6 +121,7 @@ div.slider-controls span {
 }
 
 .holder div {
+  width: calc(90vw - 2rem);
   height: 45vw;
 }
 

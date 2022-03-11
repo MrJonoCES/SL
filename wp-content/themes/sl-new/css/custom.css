@@ -63,14 +63,14 @@ section {
 .introduction {
   background-color: #F0D787;
   overflow: hidden;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-para {
   width: 80%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -45%);
 }
 
 .intro-para h1 {
@@ -221,6 +221,14 @@ div.gallery:nth-child(even){
 }
 
 /* MEDIA QUERIES */
+
+@media screen and (min-height: 400px) {
+
+.introduction {
+  height: 700px;
+}
+
+}
 
 @media screen and (min-width: 480px) {
 
@@ -396,6 +404,10 @@ section {
 
 @media screen and (min-width: 1200px) {
 
+.introduction {
+  height: 100vh;
+}
+
 .container,
 .inner-header {
   max-width: var(--body-mw1);
@@ -413,10 +425,11 @@ section {
 
 /* HOMEPAGE */
 
+.intro-cont {
+  height: 100vh;
+}
+
 .intro-para {
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
   max-width: 980px;
 }
 
@@ -426,7 +439,7 @@ section {
 
 .proj1 {
   background-color: #fc8a87;
-  background-image: url("http://localhost:8888/wp-content/uploads/2022/02/none.png");
+  background-image: url("http://jonathanl152.sg-host.com/wp-content/uploads/2022/02/none.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -434,13 +447,13 @@ section {
 }
   
 .proj1-in-viewport {
-  background-image: url("http://localhost:8888/wp-content/uploads/2022/02/fosse-chevrons.png");
+  background-image: url("http://jonathanl152.sg-host.com/wp-content/uploads/2022/02/fosse-chevrons.png");
   transition: background-image 2s ease;
 }
   
 .proj2 {
   background-color: #fff281;
-  background-image: url("http://localhost:8888/wp-content/uploads/2022/02/none.png");
+  background-image: url("http://jonathanl152.sg-host.com/wp-content/uploads/2022/02/none.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -448,13 +461,13 @@ section {
 }
   
 .proj2-in-viewport {
-  background-image: url("http://localhost:8888/wp-content/uploads/2022/02/network.png");
+  background-image: url("http://jonathanl152.sg-host.com/wp-content/uploads/2022/02/network.png");
   transition: background-image 2s ease;
 }
   
 .proj3 {
   background-color: #b1aafb;
-  background-image: url("http://localhost:8888/wp-content/uploads/2022/02/none.png");
+  background-image: url("http://jonathanl152.sg-host.com/wp-content/uploads/2022/02/none.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -462,7 +475,7 @@ section {
 }
   
 .proj3-in-viewport {
-  background-image: url("http://localhost:8888/wp-content/uploads/2022/02/box.png");
+  background-image: url("http://jonathanl152.sg-host.com/wp-content/uploads/2022/02/box.png");
   transition: background-image 2s ease;
 }
 
@@ -502,7 +515,7 @@ section {
   height: 100%;
   mix-blend-mode: hard-light;
   z-index: 99;
-  background-image: url("http://localhost:8888/wp-content/uploads/2022/02/scribbles-purple.png");
+  background-image: url("http://jonathanl152.sg-host.com/wp-content/uploads/2022/02/scribbles-purple.png");
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;

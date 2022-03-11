@@ -111,7 +111,6 @@ section.contact {
 
 .sign-up {
   display: flex;
-  border-bottom: solid 2px #1C33DB;
   padding-bottom: 12px;
   margin: 40px 0 10px 0;
   width: 50%;
@@ -125,6 +124,7 @@ input {
 
 .email-input {
   flex: 1;
+  border-bottom: solid 1px #1C33DB;
 }
 
 .form {
@@ -189,12 +189,12 @@ input {
 .email-input {
   padding-left: 0;
   text-align: left;
+  width: 50%;
 }
 
 .sign-up {
   width: 100%;
   display: grid;
-  border-bottom: none;
 }
 
 .submit {
