@@ -21,10 +21,10 @@
         <?php $process_text = get_sub_field('process_text'); ?>
 
         <?php if(!empty($process_text)) : ?>
-        <div id='my-element' class="process-text <?php the_field('process_text_height', $image['id']); ?> <?php the_field('process_text_location', $image['id']); ?>" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>; height: <?php the_field('process_text_height', $image['id']); ?>; width: 320px;<?php endif; ?>">
-        <span>
-        <?php echo $process_text; ?>
-        </span>
+        <div id="rptr" class="rptr process-text <?php the_field('process_text_height', $image['id']); ?> <?php the_field('process_text_location', $image['id']); ?>" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
+            <p id="pp" class="pp">
+            <?php echo $process_text; ?>
+            </p>
         </div>
         <?php endif; ?>
     

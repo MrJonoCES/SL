@@ -1,16 +1,20 @@
-$(function() {
-    $('#my-element').textfill({
-        maxFontPixels: 36
-    });
-});
+$('.process-container').each(function () {
 
-$(function() {
-    $('#my-element').textfill({
-        success: function() {
-		    console.log("yay!")
-		},
-		fail: function() {
-		    alert("boo hoo!")
-		}
-    });
-});
+function divCalc(){
+    var text = document.querySelector('.pp');
+    var textHeight = text.offsetHeight;
+	var gridSquare = 80;
+	var textDiv = document.querySelector('.rptr');
+	var oldHeight = textDiv.offsetHeight;
+	if (oldHeight < textHeight) {
+        textDiv.style.height = textDiv.offsetHeight + gridSquare + 'px';
+	}
+
+    console.log(oldHeight, textHeight)
+
+}
+
+window.onload = divCalc;
+window.onresize = divCalc;
+
+})
