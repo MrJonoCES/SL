@@ -20,14 +20,3 @@ document.addEventListener("scroll", function () {
   toggleHeader()
 })
 // loads on scroll
-
-$(document).ready(function() {     
-  $('.project-details, .arrow').hover(function(){     
-    // $('.project-title-home').addClass('title-on'); 
-    $('.arrow').addClass('arrow-on');    
-  },     
-  function(){    
-    // $('.project-title-home').removeClass('title-on');
-    $('.arrow').removeClass('arrow-on');     
-  });
-});  

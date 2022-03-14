@@ -35,19 +35,15 @@ get_header();
 				</section>
 
 			<section class="proj1">
-				<div class="project flex items-center min-vh-90">
-				
-				<div class="project-details relative mx-auto justify-between" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/02/DSCF5284.jpg');" class="photo-desktop">
-					<a href="http://localhost:8888/fosse-park/">
-						<div class="project-title-home absolute justify-between-ns">
-							<h2 class="col col-12 md-col-6 mv0 mint-bold title f2 f1-ns">Fosse Park</h2>
-							<p class="col col-12 md-col-5 mv0 mint blurb">The UK’s first vertical play wall</p>
-						</div>
-					</a>
-				</div>
-				</div>
-				<div class="arrow absolute" id="arrow">
-				<a href="http://localhost:8888/fosse-park/"><img src="http://localhost:8888/wp-content/uploads/2022/02/right-arrow.svg"></a>
+				<div class="project flex items-center min-vh-90">				
+					<div class="project-details relative mx-auto justify-between" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/02/DSCF5284.jpg');" class="photo-desktop">
+						<a href="http://localhost:8888/fosse-park/">
+							<div class="project-title-home absolute justify-between-ns">
+								<h2 class="col col-12 md-col-6 mv0 mint-bold title f2 f1-ns">Fosse Park</h2>
+								<p class="col col-12 md-col-5 mv0 mint blurb">The UK’s first vertical play wall</p>
+							</div>
+						</a>
+					</div>
 				</div>
 			</section>
 
@@ -60,9 +56,6 @@ get_header();
 						</div>
 					</div>
 				</div>
-				<div class="arrow absolute" id="arrow">
-					<img src="http://localhost:8888/wp-content/uploads/2022/02/right-arrow-red.svg">
-				</div>
 			</section>
 
 			<section class="proj3">
@@ -73,9 +66,6 @@ get_header();
 							<p class="col col-12 md-col-5 mv0 mint blurb">Activity guides for children</p>
 						</div>
 					</div>
-				</div>
-				<div class="arrow absolute" id="arrow">
-					<img src="http://localhost:8888/wp-content/uploads/2022/02/right-arrow.svg">
 				</div>
 			</section>
 
