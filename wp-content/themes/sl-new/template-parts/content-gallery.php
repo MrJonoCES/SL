@@ -1,4 +1,4 @@
-<div class="gallery flex flex-wrap container mx-auto">
+<div class="gallery flex-ns flex-wrap container mx-auto">
   <?php $images = get_sub_field('gallery'); ?>
   <?php foreach($images as $image) : ?> 
 
@@ -9,7 +9,7 @@
     </div>
   <?php endforeach; ?>
   
-  <div class="self-center text-block f4 col col-12 md-col-6 ph3">
+  <div class="self-center text-block col col-12 md-col-6 ph3">
   <?php $gallerytext = get_sub_field('gallery_text_block'); ?>
 
     <?php if(!empty($gallerytext)) : ?>

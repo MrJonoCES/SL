@@ -1,10 +1,9 @@
-<!-- header bg image -->
-<div class="big-title absolute shrill hero-slide pa5 mt5 lh-solid" id="post_title" style="<?php if (get_field('secondary_page_colour') ): ?> color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
+<div class="big-title absolute shrill hero-slide pa3 pa5-ns mt5 lh-solid" id="post_title" style="<?php if (get_field('secondary_page_colour') ): ?> color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
 	<?php the_title(); ?>
 </div>
 <div class="hero-screen h-100 w-100 hero-slide absolute" style="<?php if( get_field('page_colour') ): ?>background-color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
 </div>
-<div class="hero relative min-vh-100 w-100 mb4 flex items-center justify-center" style="<?php if( get_field('hero_image') ): ?>background-image: url(<?php the_field('hero_image'); ?>); <?php endif; ?>">
+<div class="hero relative w-100 mb4 flex items-center justify-center" style="<?php if( get_field('hero_image') ): ?>background-image: url(<?php the_field('hero_image'); ?>); <?php endif; ?>">
 	
 </div>
 
@@ -16,11 +15,11 @@
 	<p class="mint-bold w-100 mt0 mb3" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
 		<?php the_field('location'); ?>
 	</p>
-	<div class="flex container justify-between" style="justify-content:space-between;">
-		<p class="measure col col-12 md-col-3 mint mt0 mb3 pr0 pr6-ns" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
+	<div class="proj-intro container" style="justify-content:space-between;">
+		<p class="measure mint mt0 mb3 pr0 pr6-ns" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
 			<?php the_field('subhead'); ?>
 		</p>
-		<p class="mint col col-12 md-col-8 mt0 mb3 pr3">
+		<p class="mint mt0 mb3 pr3">
 			<?php the_field('intro'); ?>
 		</p>
 	</div>

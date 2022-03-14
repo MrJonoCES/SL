@@ -37,7 +37,7 @@
 
 	<header id="masthead" class="site-header fixed w-100">
   
-	<div class="inner-header fixed flex items-center justify-between mx-auto pa2 pa3-ns">
+	<div class="inner-header fixed flex-ns items-center justify-between">
 	
 		<h2 class="mint-bold mv0 tl">
 		<a href="http://localhost:8888/">Smith & Lewarne</a>
@@ -47,7 +47,7 @@
 		The illustration and design studio 
 		</h2>
 
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation pt1 pt0-ns">
 		<?php
 			// wp_nav_menu( array(
 			// 	'theme_location' => 'menu-1',

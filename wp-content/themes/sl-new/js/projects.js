@@ -63,6 +63,7 @@ function init() {
             frictionAir: 0.01,
             restitution: 0.8,
             render: {
+                opacity: 0.2,
                 sprite: {
                     texture: textures[
 

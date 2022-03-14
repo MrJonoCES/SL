@@ -4,8 +4,8 @@ const textures = [
 "http://localhost:8888/wp-content/uploads/2022/03/ball3.png",
 "http://localhost:8888/wp-content/uploads/2022/03/ball4.png",
 "http://localhost:8888/wp-content/uploads/2022/03/ball5.png",
-"http://localhost:8888/wp-content/uploads/2022/03/ball6.png",
-"http://localhost:8888/wp-content/uploads/2022/03/ball7.png",
+"http://localhost:8888/wp-content/uploads/2022/03/ball5.png",
+// "http://localhost:8888/wp-content/uploads/2022/03/ball7.png",
 "http://localhost:8888/wp-content/uploads/2022/03/ball8.png"];
 
 const {Engine, Render, Runner, Body, Events, Composite, Composites, Common, MouseConstraint, Mouse, World,Bodies} = Matter
@@ -17,8 +17,8 @@ const sectionTag = document.querySelector("section.introduction")
   
 function init() {
 
-  let w = window.innerWidth
-  let h = window.innerHeight
+    let w = sectionTag.offsetWidth
+    let h = sectionTag.offsetHeight
 
   engine.events = {};
   World.clear(engine.world);
@@ -105,6 +105,22 @@ function init() {
       });
   
       World.add(world, Composites.stack(w * 0.4, 50, 5, 3, 0, 0, function(x, y) {
+
+        if (window.innerWidth < 800) {
+            var bodyOptions = {
+              frictionAir: 0, 
+              friction: 0.0001,
+              restitution: 0.8,
+              render: {
+                 sprite: {
+                    xScale: 0.3,
+                    yScale: 0.3,
+                    texture: textures[
+                          Math.floor(Math.random() * (textures.length))]
+                      }
+                  }
+            }
+        } else {
         var bodyOptions = {
           frictionAir: 0, 
           friction: 0.0001,
@@ -117,7 +133,8 @@ function init() {
                       Math.floor(Math.random() * (textures.length))]
                   }
               }
-      };
+      };}
+
           switch (Math.round(Common.random(0, 1))) {
   
           case 0:
@@ -131,35 +148,22 @@ function init() {
   
           }
       }));
-      
-  
-      // add mouse control
-      var mouse = Mouse.create(renderer.canvas),
-          mouseConstraint = MouseConstraint.create(engine, {
-              mouse: mouse,
-              constraint: {
-                  stiffness: 0.2,
-                  render: {
-                      visible: false
-                  }
-              }
-          });
-
-    mouseConstraint.mouse.element.removeEventListener("mousewheel", mouseConstraint.mouse.mousewheel);
-    mouseConstraint.mouse.element.removeEventListener("DOMMouseScroll", mouseConstraint.mouse.mousewheel);
-  
-    World.add(world, mouseConstraint);
-  
   
   // run both the engine, and the renderer
   Matter.Runner.run(engine) 
   Render.run(renderer)
 
+  console.log(w, h)
+
 }
  
 init();
 
+let ww = sectionTag.offsetWidth
 
-$(window).resize(function () {
-    init();
-});
+window.addEventListener("resize", function () {
+  if (ww !== sectionTag.offsetWidth) {
+    init()
+    ww = sectionTag.offsetWidth
+  }
+})

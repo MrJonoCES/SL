@@ -1,0 +1,22 @@
+/* HEADER */
+
+.red-menu {
+  background-color: #FB5954;
+}
+
+.header-scrolled {
+  top: 0;
+}
+
+.scrolled {
+  top: 200px !important;
+}
+
+body.page-id-310 .main-title { 
+  display: block; 
+}
+
+
+/* MEDIA QUERIES */
+
+
