@@ -81,10 +81,12 @@
   .mint-bold,
   .text-block h3 {
     font-family: 'Mint Bold', sans-serif;
+    font-weight: normal;
   }
 
   .mint-bold-italic {
     font-family: 'Mint Bold Italic', sans-serif;
+    font-weight: normal;
   }
   
   .hero-heading,
@@ -117,6 +119,7 @@
     font-family: 'Mint Bold';
     font-size: 36px;
     line-height: 1.15;
+    font-weight: normal;
   }
   
   h2 {
@@ -131,19 +134,10 @@
     font-family: 'Mint Italic', sans-serif;
     font-weight: normal;
   }
-  
-  .patrona {
-    font-family: 'Patrona', sans-serif;
-  }
-  
-  /* p.mint {
-    font-size: 20px;
-  } */
 
   .project-title-home h2 {
     align-self: end;
     line-height: 1.1;
-    /* margin-bottom: -7px; */
   }
 
   .blurb {
@@ -158,6 +152,7 @@
     font-family: 'Mint Bold';
     font-size: 36px;
     line-height: 1.15;
+    font-weight: normal;
   }
 
 }

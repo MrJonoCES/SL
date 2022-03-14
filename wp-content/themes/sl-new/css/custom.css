@@ -213,6 +213,11 @@ div.gallery:nth-child(even){
   flex-direction: row-reverse;
 }
 
+.full-image img {
+  width: 100vw;
+  height: auto;
+}
+
 /* PROJECTS GRID */
 
 .projects-grid {
@@ -533,10 +538,11 @@ section {
   width: 100%;
   height: 100%;
   mix-blend-mode: hard-light;
-  z-index: 99;
-  background-image: url("http://jonathanl152.sg-host.com/wp-content/uploads/2022/02/scribbles-purple.png");
+  z-index: -1;
+  background-image: url("http://localhost:8888/wp-content/uploads/2022/02/scribbles-purple.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   top: 0;
 }
@@ -547,10 +553,12 @@ section {
   font-size: 168px;
 }
 
-.full-image {
+/* .full-image {
   width: 100vw;
   height: auto;
-}
+} */
+
+
 
 /* ALL PROJECTS */
 

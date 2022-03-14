@@ -37,8 +37,8 @@ get_header();
 			<section class="proj1">
 				<div class="project flex items-center min-vh-90">
 				
-				<div class="project-details relative mx-auto justify-between" id="project" style="background-image:url('http://jonathanl152.sg-host.com/wp-content/uploads/2022/02/DSCF5284.jpg');" class="photo-desktop">
-					<a href="http://jonathanl152.sg-host.com/fosse-park/">
+				<div class="project-details relative mx-auto justify-between" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/02/DSCF5284.jpg');" class="photo-desktop">
+					<a href="http://localhost:8888/fosse-park/">
 						<div class="project-title-home absolute justify-between-ns">
 							<h2 class="col col-12 md-col-6 mv0 mint-bold title f2 f1-ns">Fosse Park</h2>
 							<p class="col col-12 md-col-5 mv0 mint blurb">The UK’s first vertical play wall</p>
@@ -47,13 +47,13 @@ get_header();
 				</div>
 				</div>
 				<div class="arrow absolute" id="arrow">
-				<a href="http://jonathanl152.sg-host.com/fosse-park/"><img src="http://jonathanl152.sg-host.com/wp-content/uploads/2022/02/right-arrow.svg"></a>
+				<a href="http://localhost:8888/fosse-park/"><img src="http://localhost:8888/wp-content/uploads/2022/02/right-arrow.svg"></a>
 				</div>
 			</section>
 
 			<section class="proj2">
 				<div class="project flex items-center min-vh-90">
-					<div class="project-details relative mx-auto justify-between" id="project" style="background-image:url('http://jonathanl152.sg-host.com/wp-content/uploads/2020/10/dm-2020-bath-uni-edge-300dpi-0428.jpg');" class="photo-desktop">
+					<div class="project-details relative mx-auto justify-between" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2020/10/dm-2020-bath-uni-edge-300dpi-0428.jpg');" class="photo-desktop">
 						<div class="project-title-home absolute justify-between-ns">
 							<h2 class="col col-12 md-col-6 mv0 mint-bold title f2 f1-ns">Art, Research & Adventure</h2>
 							<p class="col col-12 md-col-5 mv0 mint blurb">Site specific installation</p>
@@ -61,13 +61,13 @@ get_header();
 					</div>
 				</div>
 				<div class="arrow absolute" id="arrow">
-					<img src="http://jonathanl152.sg-host.com/wp-content/uploads/2022/02/right-arrow-red.svg">
+					<img src="http://localhost:8888/wp-content/uploads/2022/02/right-arrow-red.svg">
 				</div>
 			</section>
 
 			<section class="proj3">
 				<div class="project flex items-center min-vh-90">
-					<div class="project-details relative mx-auto justify-between" id="project" style="background-image:url('http://jonathanl152.sg-host.com/wp-content/uploads/2022/02/Box-3.jpg');" class="photo-desktop">
+					<div class="project-details relative mx-auto justify-between" id="project" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/02/Box-3.jpg');" class="photo-desktop">
 						<div class="project-title-home absolute justify-between-ns">
 							<h2 class="col col-12 md-col-6 mv0 mint-bold title f2 f1-ns">The Box Guides</h2>
 							<p class="col col-12 md-col-5 mv0 mint blurb">Activity guides for children</p>
@@ -75,7 +75,7 @@ get_header();
 					</div>
 				</div>
 				<div class="arrow absolute" id="arrow">
-					<img src="http://jonathanl152.sg-host.com/wp-content/uploads/2022/02/right-arrow.svg">
+					<img src="http://localhost:8888/wp-content/uploads/2022/02/right-arrow.svg">
 				</div>
 			</section>
 
@@ -87,12 +87,12 @@ get_header();
 	
 		<div class="process-home mx-auto">
 
-			<div class="sizeA" style="background-image:url('http://jonathanl152.sg-host.com/wp-content/uploads/2020/01/WJ_Fosse-040220-145-scaled.jpg');grid-row: 1/3;"></div>
+			<div class="sizeA" style="background-image:url('http://localhost:8888/wp-content/uploads/2020/01/WJ_Fosse-040220-145-scaled.jpg');grid-row: 1/3;"></div>
 
-			<div class="sizeB" style="background-image:url('http://jonathanl152.sg-host.com/wp-content/uploads/2020/01/WJ_Fosse-040220-229-scaled.jpg');grid-column: 2/3;"></div>
+			<div class="sizeB" style="background-image:url('http://localhost:8888/wp-content/uploads/2020/01/WJ_Fosse-040220-229-scaled.jpg');grid-column: 2/3;"></div>
 			
 			<div class="process-text f4" style="background-color: blue;height:80px;">
-			<a href="http://jonathanl152.sg-host.com/process/"><p style="color:#fff !important;">Find out how we approach our work</p></a>
+			<a href="http://localhost:8888/process/"><p style="color:#fff !important;">Find out how we approach our work</p></a>
 			</div>
 
 		</div>

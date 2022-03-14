@@ -1,20 +1,31 @@
-$('.process-container').each(function () {
+const resize = () => {
+    document.querySelectorAll(".prb").forEach((div) => {
+      
+		var textDiv = div.querySelector('.rptr');
 
-function divCalc(){
-    var text = document.querySelector('.pp');
-    var textHeight = text.offsetHeight;
-	var gridSquare = 80;
-	var textDiv = document.querySelector('.rptr');
-	var oldHeight = textDiv.offsetHeight;
-	if (oldHeight < textHeight) {
-        textDiv.style.height = textDiv.offsetHeight + gridSquare + 'px';
-	}
+		if (textDiv) {
+			var text = div.querySelector('.pp');
+			var textHeight = text.offsetHeight;
+			var gridSquare = 80;
+			var oldHeight = textDiv.offsetHeight;
+			var spareHeight = textHeight + gridSquare;
 
-    console.log(oldHeight, textHeight)
+			if (oldHeight > spareHeight) {
+				textDiv.style.height = oldHeight - gridSquare + 'px';
+			}
 
+			while (oldHeight < textHeight) {
+				var textDiv = div.querySelector('.rptr');
+				textDiv.style.height = textDiv.offsetHeight + gridSquare + 'px';
+				var oldHeight = textDiv.offsetHeight;
+			}
+
+			console.log(oldHeight, textHeight, spareHeight)
+
+		} 
+
+    })
 }
 
-window.onload = divCalc;
-window.onresize = divCalc;
-
-})
+window.onresize = resize
+resize()

@@ -56,6 +56,6 @@ window.addEventListener("resize", function(event) {
   sliderWidth = document.querySelector('.holder div');
   Width = sliderWidth.offsetWidth;
 
-  console.log(Width)
+  // console.log(Width)
 });
 

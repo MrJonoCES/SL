@@ -9,7 +9,7 @@
     </div>
 <?php endif; ?>
 
-<div class="process-container mx-auto">
+<div class="prb process-container mx-auto">
     <?php $images = get_sub_field('process_gallery'); ?>
     <?php foreach($images as $image) : ?>
 
@@ -21,8 +21,8 @@
         <?php $process_text = get_sub_field('process_text'); ?>
 
         <?php if(!empty($process_text)) : ?>
-        <div id="rptr" class="rptr process-text <?php the_field('process_text_height', $image['id']); ?> <?php the_field('process_text_location', $image['id']); ?>" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
-            <p id="pp" class="pp">
+        <div class="rptr process-text <?php the_field('process_text_location', $image['id']); ?>" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
+            <p class="pp">
             <?php echo $process_text; ?>
             </p>
         </div>
