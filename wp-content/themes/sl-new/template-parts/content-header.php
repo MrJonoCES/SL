@@ -9,7 +9,7 @@
 
 <div class="container mx-auto mb3 ph3 pv2 pv3-ns">
 	
-	<h1 class="w-100 w-40-ns mint-bold proj-title mt0 mb3 lh-solid" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
+	<h1 class="w-100 w-70-ns mint-bold proj-title mt0 mb3 lh-solid" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
 		<?php the_title(); ?>
 	</h1>
 	<p class="mint-bold w-100 mt0 mb3" style="<?php if( get_field('page_colour') ): ?>color: <?php the_field('page_colour'); ?>; <?php endif; ?>">

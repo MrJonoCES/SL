@@ -57,11 +57,6 @@
     text-decoration: none;
     color: #000;
   }
-  
-  .patrona {
-    font-family: 'Patrona', sans-serif;
-    font-feature-settings: 'ss07' 1;
-  }
 
   .shrill {
     font-family: 'Shrill', sans-serif;
@@ -94,14 +89,7 @@
     font-size: 64px;
   }
 
-  /* .h1-mint {
-    font-family: 'Mint';
-    font-size: 40px;
-    line-height: 1.15;
-  } */
-
   header a {
-    /* font-size: 20px; */
     text-decoration: none;
     color: #000;
     margin-left: 16px;
@@ -123,7 +111,7 @@
   }
   
   h2 {
-    font-size: 20px;
+    font-size: 16px;
   }
   
   h2.patrona {

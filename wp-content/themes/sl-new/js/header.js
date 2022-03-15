@@ -1,7 +1,4 @@
 const headerTag = document.querySelector("div.main-title")
-// const shrinkHeader = document.querySelector("header")
-// const innerHeader = document.querySelector("div.inner-header")
-// const section = document.querySelector("section.grid" )
 
 const toggleHeader = function() {
   const pixels = window.pageYOffset
@@ -14,9 +11,6 @@ const toggleHeader = function() {
 }
 
 toggleHeader() 
-// loads on page load
-
 document.addEventListener("scroll", function () {
   toggleHeader()
 })
-// loads on scroll

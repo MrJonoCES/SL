@@ -16,7 +16,7 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<script src="http://localhost:8888/wp-content/themes/sl-new/js/jquery.min.js"></script>
+<script src="http://localhost:8888/wp-content/themes/sl-new/js/jquery-3.6.0.js"></script>
 <script src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script>
 
 <?php wp_footer(); ?>

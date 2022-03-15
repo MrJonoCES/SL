@@ -48,7 +48,7 @@
   margin: 0;
   padding: 16px;
   line-height: 1.3;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .process-heading {
@@ -258,6 +258,10 @@ div.process-container:nth-child(odd){
   margin-top: 0;
   width: 320px;
   align-self: end;
+}
+
+.process-text p {
+  font-size: 20px;
 }
 
 .text-first {
