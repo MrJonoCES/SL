@@ -33,9 +33,11 @@
 	<div class="inner-header fixed flex-ns justify-between">
 
 
-	<a href="http://localhost:8888/contact/" class="mint italic strap mv0" id="strap">The illustration and design studio</a>
+		<h2 class="mint-bold mv0 tl">
+		<a href="http://localhost:8888/">Smith & Lewarne</a>
+		</h2>
 
-		<a href="http://localhost:8888/contact/" class="mint italic strap mv0" id="strap">The illustration and design studio </a>
+		<a href="http://localhost:8888/process/" class="mint italic strap mv0" id="strap">The illustration and design studio </a>
 
 		<nav id="site-navigation" class="main-navigation">
 		<?php
@@ -45,7 +47,7 @@
 			// ) );
 		?>
 		<a class="mint" href="http://localhost:8888/projects/">Projects</a>
-		<a class="mint" href="http://localhost:8888/contact/">Process</a>
+		<a class="mint" href="http://localhost:8888/process/">Process</a>
 		<a class="mint" href="http://localhost:8888/contact/">Contact</a>
 		</nav><!-- #site-navigation -->
 

@@ -124,12 +124,10 @@
   }
 
   .project-title-home h2 {
-    align-self: end;
     line-height: 1.1;
   }
 
   .blurb {
-    align-self: end;
     line-height: 1;
     margin-bottom: -2px;
   }

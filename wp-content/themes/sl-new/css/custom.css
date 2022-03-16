@@ -137,6 +137,7 @@ canvas.canvas {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .project-title-home h2 {
