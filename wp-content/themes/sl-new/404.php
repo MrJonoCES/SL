@@ -12,10 +12,10 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-	<section class="contact" style="background-color:pink;">
+	<section class="contact">
     <div class="contact-details mx-auto">
       <div class="email-form">
-      <p class="mint-bold title lh-title blue"><?php esc_html_e( 'He&rsquo;s looked everywhere but that page can&rsquo;t be found. You can find us here though:', 'sl-new' ); ?></p>
+      <p class="mint-bold title lh-title blue w-50-ns"><?php esc_html_e( 'He&rsquo;s looked everywhere but that page can&rsquo;t be found. You can find us here though:', 'sl-new' ); ?></p>
           
     </div>
       <p class="mint-bold blue">The Ladies' Room <br>

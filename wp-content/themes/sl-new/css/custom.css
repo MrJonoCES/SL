@@ -3,6 +3,11 @@ body {
     height: 100%;
 }
 
+
+body.error404 {
+  background-color: pink;
+}
+
 :root {
   --body-width: 90vw;
   --body-mw1: 1000px;
