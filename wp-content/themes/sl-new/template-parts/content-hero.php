@@ -3,7 +3,7 @@
 </div>
 <div class="hero-screen h-100 w-100 hero-slide absolute" style="<?php if( get_field('page_colour') ): ?>background-color: <?php the_field('page_colour'); ?>; <?php endif; ?>">
 </div>
-<div class="hero relative w-100 mb4 flex items-center justify-center" style="<?php if( get_field('hero_image') ): ?>background-image: url(<?php the_field('hero_image'); ?>); <?php endif; ?>">
+<div class="hero relative w-100 mb4 flex items-center justify-center <?php if( get_field('hero_mobile_position') ): ?><?php the_field('hero_mobile_position'); ?><?php endif; ?>" style="<?php if( get_field('hero_image') ): ?>background-image: url(<?php the_field('hero_image'); ?>); <?php endif; ?>">
 	
 </div>
 

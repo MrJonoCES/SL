@@ -12,12 +12,12 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="entry-content">
+
+	<?php get_template_part( 'template-parts/content-hero' ); ?>
+
 		<?php if( have_rows('content') ): while ( have_rows('content') ) : the_row();
-			if( get_row_layout() == 'header' ): ?>
-
-			<?php get_template_part( 'template-parts/content-header' ); ?>
-
-			<?php elseif( get_row_layout() == 'text_block' ): ?>
+			
+			if( get_row_layout() == 'text_block' ): ?>
 
 			<?php get_template_part( 'template-parts/content-text' ); ?>
 

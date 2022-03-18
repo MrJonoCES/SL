@@ -29,7 +29,34 @@
 .sizeB {
   margin: 40px auto 0 auto;
   width: 280px;
-  height: 320px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sizeC {
+  margin: 40px auto 0 auto;
+  width: 280px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sizeD {
+  margin: 40px auto 0 auto;
+  width: 280px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sizeE {
+  margin: 40px auto 0 auto;
+  width: 280px;
+  height: 280px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -295,6 +322,11 @@ div.process-container:nth-child(odd){
 .sizeD {
   width: 1040px;
   height: 720px;
+}
+
+.sizeE {
+  width: 400px;
+  height: 400px;
 }
 
 .process-text {
