@@ -29,3 +29,23 @@ const resize = () => {
 
 window.onresize = resize
 resize()
+
+anime({
+	targets: '.circle',
+	// we only want to move it left by half of its width
+	translateX: '-100%',
+	duration: 1500,
+	loop: true,
+	// remove the default easing effect to keep it consistently smooth
+	easing: 'linear'
+  })
+
+// anime({
+// 	targets: '.svg',
+// 	// we only want to move it left by half of its width
+// 	translateY: '100%',
+// 	duration: 1500,
+// 	loop: true,
+// 	// remove the default easing effect to keep it consistently smooth
+// 	easing: 'linear'
+//   })
