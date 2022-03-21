@@ -59,9 +59,9 @@
   position: relative;
   top: -3px;
   right: 2px;
-    width: 65px;
-    height: 63px; 
-    overflow: hidden;
+  width: 65px;
+  height: 63px; 
+  overflow: hidden;
 }
 
 div.iris {
@@ -86,7 +86,7 @@ div.iris div {
   border: solid 10px white;
   border-style: double;
 	transform: translate(-50%, -50%);
-  transition: all 0.1s ease;
+  /* transition: all 0.1s ease; */
 }
 
 section.contact {
