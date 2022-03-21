@@ -26,7 +26,7 @@ get_header();
 <section class="process" style="padding-top: 80px; <?php if (get_field('page_colour') ): ?>background-image: linear-gradient(to right, <?php the_field('page_colour'); ?> 1px, transparent 1px), linear-gradient(to bottom, <?php the_field('page_colour'); ?> 1px, transparent 1px);<?php endif; ?>">
 
 
-    <div class="process-title mx-auto shrill process-heading tc lh-solid">
+    <div class="process-title mx-auto shrill process-heading tc lh-solid" style="height: 80px;">
 
         <h1 class="shrill process-heading tc w-100 mt0 mb3 lh-solid" style="<?php if (get_field('secondary_page_colour') ): ?> color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
             About Us
@@ -35,13 +35,13 @@ get_header();
 
     <div class="prb process-container mx-auto">
 
-        <div class="sizeD" style="margin-top: 0; background-image:url('http://localhost:8888/wp-content/uploads/2020/01/dm_2020_bath_uni_edge_300dpi-0696.jpg');"></div>
+        <div class="sizeD" id="first" style="background-image:url('http://localhost:8888/wp-content/uploads/2020/01/dm_2020_bath_uni_edge_300dpi-0696.jpg');"></div>
 
     </div>
 
     <div class="prb process-container mx-auto">
 
-        <div class="sizeB" style="margin-top: 0; background-image:url('http://localhost:8888/wp-content/uploads/2020/01/WJ_Fosse-040220-145-scaled.jpg');"></div>
+        <div class="sizeB" style="background-image:url('http://localhost:8888/wp-content/uploads/2020/01/WJ_Fosse-040220-145-scaled.jpg');"></div>
 
         <div class="rptr process-text <?php the_field('process_text_location', $image['id']); ?>" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
             <p class="pp">
@@ -53,7 +53,7 @@ get_header();
 
     <div class="prb process-container mx-auto">
 
-        <div class="sizeB" style="margin-top: 0; background-image:url('http://localhost:8888/wp-content/uploads/2022/03/dm21_nudge_neasden_x_luz_mural_72dpi-6617.jpg');"></div>
+        <div class="sizeB" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/03/dm21_nudge_neasden_x_luz_mural_72dpi-6617.jpg');"></div>
 
         <div class="rptr process-text text-first" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
             <p class="pp">
@@ -65,7 +65,7 @@ get_header();
 
     <div class="prb process-container mx-auto">
 
-        <div class="sizeB" style="margin-top: 0; background-image:url('http://localhost:8888/wp-content/uploads/2022/03/WJ_Fosse-040220-215-scaled.jpg');"></div>
+        <div class="sizeB" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/03/WJ_Fosse-040220-215-scaled.jpg');"></div>
 
         <div class="rptr process-text <?php the_field('process_text_location', $image['id']); ?>" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
             <p class="pp">
@@ -77,16 +77,16 @@ get_header();
 
     <div class="prb process-container mx-auto">
 
-        <div class="sizeD" style="margin-top: 0; background-image:url('http://localhost:8888/wp-content/uploads/2022/03/写真-H30-06-26-13-59-26.jpg');"></div>
+        <div class="sizeD" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/03/写真-H30-06-26-13-59-26.jpg');"></div>
 
-        <div class="process-title mx-auto shrill process-heading tc lh-solid" style="grid-column: 1 /3; padding-top: 94px;">
+        <div class="process-title mx-auto shrill process-heading tc lh-solid" id="second">
 
             <h1 class="shrill process-heading tc w-100 mt0 mb3 lh-solid" style="<?php if (get_field('secondary_page_colour') ): ?> color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
                 Services We Offer
             </h1>
         </div>
 
-        <div class="sizeA" style="margin-top: 80px; background-image:url('http://localhost:8888/wp-content/uploads/2022/03/gsix_tokyo-001.jpg');"></div>
+        <div class="sizeA" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/03/gsix_tokyo-001.jpg');"></div>
 
         <div class="rptr process-text <?php the_field('process_text_location', $image['id']); ?>" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
             <p class="pp">
@@ -106,7 +106,7 @@ get_header();
 
     <div class="prb process-container mx-auto">
 
-    <div class="sizeB" style="margin-top: 0; background-position-x:100%; background-image:url('http://localhost:8888/wp-content/uploads/2020/01/20200715-_DSF6547.jpg');"></div>
+    <div class="sizeB" style="background-position-x:100%; background-image:url('http://localhost:8888/wp-content/uploads/2020/01/20200715-_DSF6547.jpg');"></div>
 
     <div class="rptr process-text text-first" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
         <p class="pp">
@@ -118,7 +118,7 @@ get_header();
 
     <div class="prb process-container mx-auto">
 
-        <div class="sizeB" style="margin-top: 0; background-image:url('http://localhost:8888/wp-content/uploads/2022/03/2682975623.jpg');"></div>
+        <div class="sizeB" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/03/2682975623.jpg');"></div>
 
         <div class="rptr process-text <?php the_field('process_text_location', $image['id']); ?>" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
             <p class="pp">
@@ -130,7 +130,7 @@ get_header();
 
     <div class="prb process-container mx-auto">
 
-        <div class="sizeB" style="margin-top: 0;display:flex;flex-direction:column;position:relative;">
+        <div class="sizeA" style="display:flex;flex-direction:column;position:relative;">
 
             <div class="triangle-box">
                 <div class="triangle">
