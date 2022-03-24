@@ -33,8 +33,8 @@ resize()
 anime({
 	targets: '.circle',
 	// we only want to move it left by half of its width
-	translateX: '-100%',
-	duration: 1500,
+	translateX: '-200%',
+	duration: 2500,
 	loop: true,
 	// remove the default easing effect to keep it consistently smooth
 	easing: 'linear'

@@ -12,7 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-
+	<!-- Wordpress theme designed by Smith & Lewarne - ask us about designing yours! -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

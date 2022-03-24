@@ -75,6 +75,288 @@ get_header();
 
     </div>
 
+    <div class="animation-bar">
+
+        <div class="triangle-box">
+            <div class="triangle">
+                <div class="circles">
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="80" height="80" fill="#6D36FA"/>
+                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
+                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
+                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
+                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="80" height="80" fill="#6D36FA"/>
+                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
+                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
+                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
+                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="triangle-box">
+            <div class="triangle">
+                <div class="circles">
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="80" height="80" fill="#6D36FA"/>
+                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
+                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
+                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
+                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="80" height="80" fill="#6D36FA"/>
+                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
+                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
+                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
+                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="triangle-box">
+            <div class="triangle">
+                <div class="circles">
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="80" height="80" fill="#6D36FA"/>
+                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
+                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
+                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
+                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="80" height="80" fill="#6D36FA"/>
+                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
+                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
+                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
+                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="triangle-box">
+            <div class="triangle">
+                <div class="circles">
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="80" height="80" fill="#6D36FA"/>
+                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
+                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
+                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
+                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="80" height="80" fill="#6D36FA"/>
+                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
+                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
+                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
+                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="triangle-box">
+            <div class="triangle">
+                <div class="circles">
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="80" height="80" fill="#6D36FA"/>
+                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
+                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
+                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
+                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="80" height="80" fill="#6D36FA"/>
+                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
+                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
+                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
+                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="triangle-box">
+            <div class="triangle">
+                <div class="circles">
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="80" height="80" fill="#6D36FA"/>
+                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
+                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
+                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
+                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="80" height="80" fill="#6D36FA"/>
+                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
+                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
+                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                    <div class="circle">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
+                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
+                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
+                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
+                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
+                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
+                    </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
     <div class="prb process-container mx-auto">
 
         <div class="sizeD" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/03/写真-H30-06-26-13-59-26.jpg');"></div>
@@ -128,7 +410,114 @@ get_header();
 
     </div>
 
-    <div class="prb process-container mx-auto">
+    <div class="animation-bar">
+
+        <div class="triangle-box">
+            <div class="triangle">
+
+                <div class="circles">
+                    <div class="circle">
+                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
+                        </svg>
+                    </div>
+                    <div class="circle">
+                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="triangle-box">
+            <div class="triangle">
+
+                <div class="circles">
+                    <div class="circle">
+                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
+                        </svg>
+                    </div>
+                    <div class="circle">
+                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="triangle-box">
+            <div class="triangle">
+
+                <div class="circles">
+                    <div class="circle">
+                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
+                        </svg>
+                    </div>
+                    <div class="circle">
+                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="triangle-box">
+            <div class="triangle">
+
+                <div class="circles">
+                    <div class="circle">
+                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
+                        </svg>
+                    </div>
+                    <div class="circle">
+                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="triangle-box">
+            <div class="triangle">
+
+                <div class="circles">
+                    <div class="circle">
+                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
+                        </svg>
+                    </div>
+                    <div class="circle">
+                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="triangle-box">
+            <div class="triangle">
+
+                <div class="circles">
+                    <div class="circle">
+                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
+                        </svg>
+                    </div>
+                    <div class="circle">
+                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="prb process-container mx-auto">
 
         <div class="sizeA" style="display:flex;flex-direction:column;position:relative;">
 
@@ -229,7 +618,7 @@ get_header();
             </p>
         </div>
 
-    </div>
+    </div> -->
 
 
 </section>
