@@ -26,7 +26,7 @@ get_header();
 <section class="process" style="padding-top: 80px; <?php if (get_field('page_colour') ): ?>background-image: linear-gradient(to right, <?php the_field('page_colour'); ?> 1px, transparent 1px), linear-gradient(to bottom, <?php the_field('page_colour'); ?> 1px, transparent 1px);<?php endif; ?>">
 
 
-    <div class="process-title mx-auto shrill process-heading tc lh-solid" style="height: 80px;">
+    <div class="process-title mx-auto shrill process-heading tc lh-solid">
 
         <h1 class="shrill process-heading tc w-100 mt0 mb3 lh-solid" style="<?php if (get_field('secondary_page_colour') ): ?> color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
             About Us
@@ -35,13 +35,13 @@ get_header();
 
     <div class="prb process-container mx-auto">
 
-        <div class="sizeD" id="first" style="background-image:url('http://localhost:8888/wp-content/uploads/2020/01/dm_2020_bath_uni_edge_300dpi-0696.jpg');"></div>
+        <div class="sizeD" style="margin-top: 0; background-image:url('http://localhost:8888/wp-content/uploads/2020/01/dm_2020_bath_uni_edge_300dpi-0696.jpg');"></div>
 
     </div>
 
     <div class="prb process-container mx-auto">
 
-        <div class="sizeB" style="background-image:url('http://localhost:8888/wp-content/uploads/2020/01/WJ_Fosse-040220-145-scaled.jpg');"></div>
+        <div class="sizeB" style="margin-top: 0; background-image:url('http://localhost:8888/wp-content/uploads/2020/01/WJ_Fosse-040220-145-scaled.jpg');"></div>
 
         <div class="rptr process-text <?php the_field('process_text_location', $image['id']); ?>" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
             <p class="pp">
@@ -53,7 +53,7 @@ get_header();
 
     <div class="prb process-container mx-auto">
 
-        <div class="sizeB" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/03/dm21_nudge_neasden_x_luz_mural_72dpi-6617.jpg');"></div>
+        <div class="sizeB" style="margin-top: 0; background-image:url('http://localhost:8888/wp-content/uploads/2022/03/dm21_nudge_neasden_x_luz_mural_72dpi-6617.jpg');"></div>
 
         <div class="rptr process-text text-first" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
             <p class="pp">
@@ -65,7 +65,7 @@ get_header();
 
     <div class="prb process-container mx-auto">
 
-        <div class="sizeB" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/03/WJ_Fosse-040220-215-scaled.jpg');"></div>
+        <div class="sizeB" style="margin-top: 0; background-image:url('http://localhost:8888/wp-content/uploads/2022/03/WJ_Fosse-040220-215-scaled.jpg');"></div>
 
         <div class="rptr process-text <?php the_field('process_text_location', $image['id']); ?>" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
             <p class="pp">
@@ -75,300 +75,18 @@ get_header();
 
     </div>
 
-    <div class="animation-bar">
-
-        <div class="triangle-box">
-            <div class="triangle">
-                <div class="circles">
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="80" height="80" fill="#6D36FA"/>
-                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
-                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
-                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
-                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="80" height="80" fill="#6D36FA"/>
-                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
-                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
-                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
-                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="triangle-box">
-            <div class="triangle">
-                <div class="circles">
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="80" height="80" fill="#6D36FA"/>
-                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
-                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
-                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
-                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="80" height="80" fill="#6D36FA"/>
-                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
-                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
-                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
-                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="triangle-box">
-            <div class="triangle">
-                <div class="circles">
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="80" height="80" fill="#6D36FA"/>
-                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
-                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
-                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
-                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="80" height="80" fill="#6D36FA"/>
-                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
-                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
-                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
-                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="triangle-box">
-            <div class="triangle">
-                <div class="circles">
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="80" height="80" fill="#6D36FA"/>
-                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
-                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
-                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
-                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="80" height="80" fill="#6D36FA"/>
-                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
-                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
-                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
-                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="triangle-box">
-            <div class="triangle">
-                <div class="circles">
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="80" height="80" fill="#6D36FA"/>
-                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
-                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
-                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
-                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="80" height="80" fill="#6D36FA"/>
-                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
-                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
-                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
-                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="triangle-box">
-            <div class="triangle">
-                <div class="circles">
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="80" height="80" fill="#6D36FA"/>
-                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
-                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
-                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
-                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="80" height="80" fill="#6D36FA"/>
-                        <rect y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" fill="#6D36FA"/>
-                        <rect x="80" y="80" width="80" height="80" fill="#6D36FA"/>
-                        <rect y="160" width="80" height="80" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                    <div class="circle">
-                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="240" width="80" height="80" transform="rotate(90 240 0)" fill="#6D36FA"/>
-                        <rect x="160" width="80" height="80" transform="rotate(90 160 0)" fill="#6D36FA"/>
-                        <rect x="240" y="80" width="80" height="80" transform="rotate(90 240 80)" fill="#6D36FA"/>
-                        <rect x="240" y="160" width="80" height="80" transform="rotate(90 240 160)" fill="#6D36FA"/>
-                        <rect x="160" y="80" width="80" height="80" transform="rotate(90 160 80)" fill="#6D36FA"/>
-                        <rect x="80" width="80" height="80" transform="rotate(90 80 0)" fill="#6D36FA"/>
-                    </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-
     <div class="prb process-container mx-auto">
 
-        <div class="sizeD" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/03/写真-H30-06-26-13-59-26.jpg');"></div>
+        <div class="sizeD" style="margin-top: 0; background-image:url('http://localhost:8888/wp-content/uploads/2022/03/写真-H30-06-26-13-59-26.jpg');"></div>
 
-        <div class="process-title mx-auto shrill process-heading tc lh-solid" id="second">
+        <div class="process-title mx-auto shrill process-heading tc lh-solid" style="grid-column: 1 /3; padding-top: 94px;">
 
             <h1 class="shrill process-heading tc w-100 mt0 mb3 lh-solid" style="<?php if (get_field('secondary_page_colour') ): ?> color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
                 Services We Offer
             </h1>
         </div>
 
-        <div class="sizeA" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/03/gsix_tokyo-001.jpg');"></div>
+        <div class="sizeA" style="margin-top: 80px; background-image:url('http://localhost:8888/wp-content/uploads/2022/03/gsix_tokyo-001.jpg');"></div>
 
         <div class="rptr process-text <?php the_field('process_text_location', $image['id']); ?>" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
             <p class="pp">
@@ -388,7 +106,7 @@ get_header();
 
     <div class="prb process-container mx-auto">
 
-    <div class="sizeB" style="background-position-x:100%; background-image:url('http://localhost:8888/wp-content/uploads/2020/01/20200715-_DSF6547.jpg');"></div>
+    <div class="sizeB" style="margin-top: 0; background-position-x:100%; background-image:url('http://localhost:8888/wp-content/uploads/2020/01/20200715-_DSF6547.jpg');"></div>
 
     <div class="rptr process-text text-first" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
         <p class="pp">
@@ -400,7 +118,7 @@ get_header();
 
     <div class="prb process-container mx-auto">
 
-        <div class="sizeB" style="background-image:url('http://localhost:8888/wp-content/uploads/2022/03/2682975623.jpg');"></div>
+        <div class="sizeB" style="margin-top: 0; background-image:url('http://localhost:8888/wp-content/uploads/2022/03/2682975623.jpg');"></div>
 
         <div class="rptr process-text <?php the_field('process_text_location', $image['id']); ?>" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
             <p class="pp">
@@ -412,213 +130,31 @@ get_header();
 
     <div class="animation-bar">
 
-        <div class="triangle-box">
-            <div class="triangle">
-
-                <div class="circles">
-                    <div class="circle">
-                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
+            <div class="triangle-box" id="triangle">
+                <div class="triangle">
+                    <div class="svg">
+                        <svg width="240" height="220" viewBox="0 0 240 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M147.8 0C267.9 68 252.3 135.9 150.1 211.1C148.7 212.7 141.5 217.2 138.8 220H240V0H147.8ZM92.5 0H0V220H91.6C58.6 193.8 26.7 161.7 10.6 123C-12.3 68.4 50 28.3 92.5 0Z" fill="#1C62F4"/>
                         </svg>
                     </div>
-                    <div class="circle">
-                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="triangle-box">
-            <div class="triangle">
-
-                <div class="circles">
-                    <div class="circle">
-                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                        </svg>
-                    </div>
-                    <div class="circle">
-                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                        </svg>
+                    <div class="circles">
+                        <div class="circle">
+                            <svg width="158" height="150" viewBox="0 0 158 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.3 53.1C40.3 -40.4 183.1 0 153.8 101.3C131.4 191.1 -29 144.7 5.3 53.1Z" fill="#E65F45"/>
+                            </svg>
+                        </div>
+                        <div class="circle">
+                            <svg width="158" height="150" viewBox="0 0 158 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.3 53.1C40.3 -40.4 183.1 0 153.8 101.3C131.4 191.1 -29 144.7 5.3 53.1Z" fill="#E65F45"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="triangle-box">
-            <div class="triangle">
-
-                <div class="circles">
-                    <div class="circle">
-                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                        </svg>
-                    </div>
-                    <div class="circle">
-                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="triangle-box">
-            <div class="triangle">
-
-                <div class="circles">
-                    <div class="circle">
-                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                        </svg>
-                    </div>
-                    <div class="circle">
-                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="triangle-box">
-            <div class="triangle">
-
-                <div class="circles">
-                    <div class="circle">
-                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                        </svg>
-                    </div>
-                    <div class="circle">
-                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="triangle-box">
-            <div class="triangle">
-
-                <div class="circles">
-                    <div class="circle">
-                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                        </svg>
-                    </div>
-                    <div class="circle">
-                        <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
+   
         </div>
 
     </div>
-
-    <!-- <div class="prb process-container mx-auto">
-
-        <div class="sizeA" style="display:flex;flex-direction:column;position:relative;">
-
-            <div class="triangle-box">
-                <div class="triangle">
-                    <div class="svg">
-                        <svg width="240" height="480" viewBox="0 0 240 480" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 479.5V239.5H240L0 479.5Z" fill="#6D36FA"/>
-                            <path d="M0 240V0H240L0 240Z" fill="#6D36FA"/>
-                        </svg>
-                    </div>
-                    <div class="circles">
-                        <div class="circle">
-                            <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                            </svg>
-                        </div>
-                        <div class="circle">
-                            <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="triangle-box">
-                <div class="triangle" style="left:240px;">
-                    <div class="svg">
-                        <svg width="240" height="480" viewBox="0 0 240 480" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 479.5V239.5H240L0 479.5Z" fill="#6D36FA"/>
-                            <path d="M0 240V0H240L0 240Z" fill="#6D36FA"/>
-                        </svg>
-                    </div>
-                    <div class="circles">
-                        <div class="circle">
-                            <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                            </svg>
-                        </div>
-                        <div class="circle">
-                            <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="triangle-box">
-                <div class="triangle" style="top:240px;">
-                    <div class="svg">
-                        <svg width="240" height="480" viewBox="0 0 240 480" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 479.5V239.5H240L0 479.5Z" fill="#6D36FA"/>
-                            <path d="M0 240V0H240L0 240Z" fill="#6D36FA"/>
-                        </svg>
-                    </div>
-                    <div class="circles">
-                        <div class="circle">
-                            <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                            </svg>
-                        </div>
-                        <div class="circle">
-                            <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="triangle-box">
-                <div class="triangle" style="top:240px;left:240px;">
-                    <div class="svg">
-                        <svg width="240" height="480" viewBox="0 0 240 480" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 479.5V239.5H240L0 479.5Z" fill="#6D36FA"/>
-                            <path d="M0 240V0H240L0 240Z" fill="#6D36FA"/>
-                        </svg>
-                    </div>
-                    <div class="circles">
-                        <div class="circle">
-                            <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                            </svg>
-                        </div>
-                        <div class="circle">
-                            <svg width="238" height="238" viewBox="0 0 238 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="119" cy="119" r="119" fill="#1fe6cc"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-        </div>
-
-        <div class="rptr process-text text-first" style="<?php if (get_field('secondary_page_colour') ): ?> background-color: <?php the_field('secondary_page_colour'); ?>;<?php endif; ?>">
-            <p class="pp">
-            We have close ties with several collaborators who we work with to realise our projects, including printers, production teams, photographers. We love working as part of an interdisciplinary team alongside other dedicated professionals. 
-            </p>
-        </div>
-
-    </div> -->
 
 
 </section>

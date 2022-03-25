@@ -30,11 +30,18 @@ const resize = () => {
 window.onresize = resize
 resize()
 
+const duplicateHTML = (element, quantity) => {
+	const newContent =  new Array(quantity).fill(element.innerHTML).join('')
+	element.innerHTML = newContent
+  }
+
+const circles = document.querySelector('#triangle')
+duplicateHTML(circles, 12)
 anime({
 	targets: '.circle',
 	// we only want to move it left by half of its width
 	translateX: '-200%',
-	duration: 2500,
+	duration: 1500,
 	loop: true,
 	// remove the default easing effect to keep it consistently smooth
 	easing: 'linear'
