@@ -47,12 +47,14 @@ anime({
 	easing: 'linear'
   })
 
-// anime({
-// 	targets: '.svg',
-// 	// we only want to move it left by half of its width
-// 	translateY: '100%',
-// 	duration: 1500,
-// 	loop: true,
-// 	// remove the default easing effect to keep it consistently smooth
-// 	easing: 'linear'
-//   })
+const barDot = document.querySelector('#bar-dot')
+duplicateHTML(barDot, 12)
+anime({
+	targets: '#dot',
+	translateY: '200%',
+	delay: (el, i, l) => i * 100,
+	duration: 2000,
+	loop: true,
+	direction: 'alternate',
+	easing: 'spring(1, 80, 10, 0)'
+})

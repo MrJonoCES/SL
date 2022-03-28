@@ -75,6 +75,23 @@ get_header();
 
     </div>
 
+    <div class="animation-bar">
+        <div class="bar-dot-box" id="bar-dot">
+            <div class="bar-dot">
+                <div class="svg">
+                    <svg width="320" height="97" viewBox="0 0 320 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0V90.2L320 96.1V0H0Z" fill="#E65F45"/>
+                    </svg>
+                </div>
+                <div class="dot" id="dot">
+                    <svg width="138" height="130" viewBox="0 0 138 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M132 102.1C108.3 135.6 95.2 129.4 58.3 127C7.6 131.1 -11 68.9 7.8 29.9C28.5 -3.00001 56.2 -0.700014 90.3 0.999986C137.4 11.1 144.4 62.3 132 102.1Z" fill="#1C62F4"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="prb process-container mx-auto">
 
         <div class="sizeD" style="margin-top: 0; background-image:url('http://localhost:8888/wp-content/uploads/2022/03/写真-H30-06-26-13-59-26.jpg');"></div>
