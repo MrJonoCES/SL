@@ -45,6 +45,7 @@
   flex-direction: row;
   zoom: 0.585;
   align-items: center;
+  margin-left: -1px;
 }
 
 .svg {
