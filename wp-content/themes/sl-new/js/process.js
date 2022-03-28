@@ -58,3 +58,15 @@ anime({
 	direction: 'alternate',
 	easing: 'spring(1, 80, 10, 0)'
 })
+
+const wheelBox = document.querySelector('#wheelbox')
+duplicateHTML(wheelBox, 10)
+anime({
+  targets: '#wheel path',
+  rotate: '1turn',
+  delay: (el, i, l) => i * 100,
+  duration: 1200,
+  loop: true,
+  direction: 'alternate',
+  easing: 'easeInOutSine'
+})
