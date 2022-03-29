@@ -146,7 +146,7 @@ get_header();
     </div>
 
     <div class="animation-bar">
-        <div class="flex" id="wheelbox">
+        <div class="flex items-center" id="wheelbox">
             <div class="wheelbox">
                 <div class="wheel" id="wheel">
                     <svg width="127" height="125" viewBox="0 0 127 125" fill="none" xmlns="http://www.w3.org/2000/svg">

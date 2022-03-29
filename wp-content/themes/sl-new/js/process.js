@@ -60,7 +60,7 @@ anime({
 })
 
 const wheelBox = document.querySelector('#wheelbox')
-duplicateHTML(wheelBox, 10)
+duplicateHTML(wheelBox, 20)
 anime({
   targets: '#wheel path',
   rotate: '1turn',
