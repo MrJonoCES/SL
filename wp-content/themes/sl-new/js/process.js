@@ -70,3 +70,15 @@ anime({
   direction: 'alternate',
   easing: 'easeInOutSine'
 })
+
+const moonBox = document.querySelector('#moonbox')
+duplicateHTML(moonBox, 20)
+anime({
+  targets: '#moon path',
+  translateX: '50%',
+  delay: (el, i, l) => i * 100,
+  duration: 1200,
+  loop: true,
+  direction: 'alternate',
+  easing: 'easeInOutSine'
+})

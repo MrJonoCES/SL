@@ -146,6 +146,19 @@ get_header();
     </div>
 
     <div class="animation-bar">
+        <div class="flex" id="moonbox">
+            <div class="moonbox" id="">
+                <div class="moon" id="moon">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M120 0V240C277.44 231.189 282.54 0.330427 120 0ZM187.96 219.624L188.07 219.453C187.87 219.383 187.91 219.453 187.96 219.624Z" fill="#1C62F4"/>
+                        <path d="M0 0V240C157.44 231.189 162.54 0.330427 0 0ZM67.96 219.624L68.07 219.453C67.87 219.383 67.91 219.453 67.96 219.624Z" fill="#1C62F4"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="animation-bar">
         <div class="flex items-center" id="wheelbox">
             <div class="wheelbox">
                 <div class="wheel" id="wheel">
