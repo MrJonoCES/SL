@@ -75,6 +75,7 @@ const moonBox = document.querySelector('#moonbox')
 duplicateHTML(moonBox, 20)
 anime({
   targets: '#moon path',
+//   fill: '#E65F45',
   translateX: '50%',
   delay: (el, i, l) => i * 100,
   duration: 1200,
