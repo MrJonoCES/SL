@@ -83,3 +83,15 @@ anime({
   direction: 'alternate',
   easing: 'easeInOutSine'
 })
+
+const archDot = document.querySelector('#arch-dot')
+duplicateHTML(archDot, 20)
+anime({
+	targets: '#ball',
+	translateY: '500%',
+	delay: (el, i, l) => i * 100,
+	duration: 2000,
+	loop: true,
+	direction: 'alternate',
+	easing: 'easeInOutSine'
+})

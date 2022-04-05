@@ -159,6 +159,23 @@ get_header();
     </div>
 
     <div class="animation-bar">
+        <div class="arch-box" id="arch-dot">
+            <div class="arch">
+                <div class="svg">
+                    <svg width="115" height="240" viewBox="0 0 115 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0V240H50.9V233.79C52.17 210.16 50.44 186.24 54.31 162.81C57.72 118.28 77.43 72.55 114.99 65.01V0H0Z" fill="#1C62F4"/>
+                    </svg>
+                </div>
+                <div class="ball" id="ball">
+                    <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M32.72 57.03C-5.54 60.62 -11.68 7.1 24.96 0.830002C40.01 0.740002 56.64 6.24 58.12 23.53C60.49 41.53 52.21 56.64 32.72 57.03V57.03Z" fill="#E65F45"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="animation-bar">
         <div class="flex items-center" id="wheelbox">
             <div class="wheelbox">
                 <div class="wheel" id="wheel">
